@@ -1,0 +1,14 @@
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\bin\Debug\net8.0\AmazingFileVersionControl.Core.deps.json
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\bin\Debug\net8.0\AmazingFileVersionControl.Core.runtimeconfig.json
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\bin\Debug\net8.0\AmazingFileVersionControl.Core.dll
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\bin\Debug\net8.0\AmazingFileVersionControl.Core.pdb
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.csproj.AssemblyReference.cache
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.AssemblyInfoInputs.cache
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.AssemblyInfo.cs
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.csproj.CoreCompileInputs.cache
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.dll
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\refint\AmazingFileVersionControl.Core.dll
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.pdb
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\AmazingFileVersionControl.Core.genruntimeconfig.cache
+C:\Users\David\Documents\Visual Studio Projects\AmazingFileVersionControl\AmazingFileVersionControl.Core\obj\Debug\net8.0\ref\AmazingFileVersionControl.Core.dll
