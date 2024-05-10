@@ -10,7 +10,7 @@ namespace AmazingFileVersionControl.Core.DTOs.AuthDTOs
     public class RegisterDTO
     {
         [Required(ErrorMessage = "Login is required")]
-        [StringLength(50, MinimumLength = 3, ErrorMessage = "Login length must be between 3 and 50 characters")]
+        [StringLength(30, MinimumLength = 3, ErrorMessage = "Login length must be between 3 and 50 characters")]
         public string Login { get; set; }
 
         [Required(ErrorMessage = "Email is required")]
@@ -19,7 +19,7 @@ namespace AmazingFileVersionControl.Core.DTOs.AuthDTOs
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
-        [StringLength(100, MinimumLength = 8, ErrorMessage = "Password length must be between 6 and 100 characters")]
+        [StringLength(256, MinimumLength = 8, ErrorMessage = "Password length must be between 6 and 100 characters")]
         public string Password { get; set; }
     }
 }
