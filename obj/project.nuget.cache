@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "v+U8UtU4BCIpiHHMtDvE4QqTcl/iVPUmcyFQ5mSyNYHtOgE+AGs4lHkETKTDoXk/DtSgD63+ZDht9UaqElpcxw==",
+  "dgSpecHash": "C7UfMVH6MrLnHypvWlBFzBqsd9aS76URRnTY2aJUq4sGsijY8+pkwwt7Lbk9iFlLEm+QTsT1S5ALh8VKs6KtmA==",
   "success": true,
   "projectFilePath": "C:\\Users\\David\\Documents\\Visual Studio Projects\\AmazingFileVersionControl\\AmazingFileVersionControl.Core\\AmazingFileVersionControl.Core.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\David\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\David\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.3\\microsoft.codeanalysis.analyzers.3.3.3.nupkg.sha512",
     "C:\\Users\\David\\.nuget\\packages\\microsoft.codeanalysis.common\\4.5.0\\microsoft.codeanalysis.common.4.5.0.nupkg.sha512",

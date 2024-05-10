@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AmazingFileVersionControl.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fe468742bf3c2bec73d72113c22b448fa3bdb21")]
 [assembly: System.Reflection.AssemblyProductAttribute("AmazingFileVersionControl.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AmazingFileVersionControl.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

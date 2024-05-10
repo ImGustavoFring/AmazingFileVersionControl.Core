@@ -1,16 +1,13 @@
 ﻿using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
-using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using System.Text;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
 namespace AmazingFileVersionControl.Core.Infrastructure
 {
-    public class JwtService
+    public class JwtService : IJwtService
     {
         private readonly string _secret;
         private readonly string _expDate;
