@@ -4,6 +4,6 @@ namespace AmazingFileVersionControl.Core.Repositories
 {
     public interface ILoggingRepository
     {
-        Task InsertLogAsync(LogEntry logEntry);
+        Task InsertLogAsync(LogEntity logEntry);
     }
 }

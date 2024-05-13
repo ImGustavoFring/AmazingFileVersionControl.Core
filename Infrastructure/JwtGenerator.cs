@@ -7,14 +7,14 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace AmazingFileVersionControl.Core.Infrastructure
 {
-    public class JwtService : IJwtService
+    public class JwtGenerator : IJwtGenerator
     {
         private readonly string _secret;
         private readonly string _expDate;
         private readonly string _issuer;
         private readonly string _audience;
 
-        public JwtService(IConfiguration config)
+        public JwtGenerator(IConfiguration config)
         {
             _secret = config.GetSection("JwtConfig:Secret").Value;
             _expDate = config.GetSection("JwtConfig:ExpirationInMinutes").Value;

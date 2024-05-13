@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Models.LoggingEntities
 {
-    public class LogEntry
+    public class LogEntity
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]

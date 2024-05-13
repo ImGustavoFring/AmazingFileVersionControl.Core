@@ -33,7 +33,7 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
-        public async Task<UserEntity?> GetOneByFilterAsync(Expression<Func<UserEntity, bool>> filter)
+        public async Task<UserEntity> GetOneByFilterAsync(Expression<Func<UserEntity, bool>> filter)
         {
             try
             {

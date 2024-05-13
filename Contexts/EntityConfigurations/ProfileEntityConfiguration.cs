@@ -10,18 +10,18 @@ using AmazingFileVersionControl.Core.Models.UserDbEntities;
 
 namespace AmazingFileVersionControl.Core.Contexts.EntityConfigurations
 {
-    public class ProfileEntityConfiguration : IEntityTypeConfiguration<ProfileEntity>
-    {
-        public void Configure(EntityTypeBuilder<ProfileEntity> builder)
-        {
-            builder
-            .HasKey(p => p.Id);
+    //public class ProfileEntityConfiguration : IEntityTypeConfiguration<ProfileEntity>
+    //{
+    //    public void Configure(EntityTypeBuilder<ProfileEntity> builder)
+    //    {
+    //        builder
+    //        .HasKey(p => p.Id);
 
-            builder
-                .HasOne(p => p.User)
-                .WithOne(u => u.Profile)
-                .HasForeignKey<ProfileEntity>(p => p.UserId)
-                .OnDelete(DeleteBehavior.Cascade);
-        }
-    }
+    //        builder
+    //            .HasOne(p => p.User)
+    //            .WithOne(u => u.Profile)
+    //            .HasForeignKey<ProfileEntity>(p => p.UserId)
+    //            .OnDelete(DeleteBehavior.Cascade);
+    //    }
+    //}
 }

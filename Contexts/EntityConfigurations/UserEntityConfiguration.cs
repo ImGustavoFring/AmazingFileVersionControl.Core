@@ -46,10 +46,10 @@ namespace AmazingFileVersionControl.Core.Contexts.EntityConfigurations
                     v => v.ToString(),
                     v => (RoleInSystem)Enum.Parse(typeof(RoleInSystem), v));
 
-            builder
-                .HasOne(u => u.Profile)
-                .WithOne(p => p.User)
-                .HasForeignKey<ProfileEntity>(p => p.UserId);
+            //builder
+            //    .HasOne(u => u.Profile)
+            //    .WithOne(p => p.User)
+            //    .HasForeignKey<ProfileEntity>(p => p.UserId);
         }
     }
 }

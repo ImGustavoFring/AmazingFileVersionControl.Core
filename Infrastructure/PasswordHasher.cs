@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Infrastructure
 {
-    public class BcCryptService : IBcCryptService
+    public class PasswordHasher : IPasswordHasher
     {
         public string HashPassword(string password)
         {

@@ -14,7 +14,7 @@ namespace AmazingFileVersionControl.Core.DTOs.FileDTOs
         public string Name { get; set; }
 
         [Required]
-        public string Owner { get; set; }
+        public string? Owner { get; set; }
 
         [Required]
         public string Project { get; set; }

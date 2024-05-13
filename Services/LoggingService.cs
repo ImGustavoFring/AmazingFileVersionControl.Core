@@ -1,11 +1,7 @@
 ﻿using AmazingFileVersionControl.Core.Models.LoggingEntities;
 using AmazingFileVersionControl.Core.Repositories;
 using MongoDB.Bson;
-using MongoDB.Driver;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Services
@@ -21,15 +17,22 @@ namespace AmazingFileVersionControl.Core.Services
 
         public async Task LogAsync(string controller, string action, string message, string level = "Info", BsonDocument additionalData = null)
         {
-            var logEntry = new LogEntry
+            try
             {
-                Controller = controller,
-                Action = action,
-                Message = message,
-                Level = level,
-                AdditionalData = additionalData
-            };
-            await _loggingRepository.InsertLogAsync(logEntry);
+                var logEntry = new LogEntity
+                {
+                    Controller = controller,
+                    Action = action,
+                    Message = message,
+                    Level = level,
+                    AdditionalData = additionalData
+                };
+                await _loggingRepository.InsertLogAsync(logEntry);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to log the entry.", ex);
+            }
         }
     }
 }

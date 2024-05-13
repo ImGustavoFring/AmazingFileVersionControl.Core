@@ -9,10 +9,12 @@ namespace AmazingFileVersionControl.Core.Services
     public class AuthService : IAuthService
     {
         private readonly IUserRepository _userRepository;
-        private readonly IJwtService _jwtService;
-        private readonly IBcCryptService _bcCryptService;
+        private readonly IJwtGenerator _jwtService;
+        private readonly IPasswordHasher _bcCryptService;
 
-        public AuthService(IUserRepository userRepository, IJwtService jwtService, IBcCryptService bcCryptService)
+        public AuthService(IUserRepository userRepository,
+            IJwtGenerator jwtService,
+            IPasswordHasher bcCryptService)
         {
             _userRepository = userRepository;
             _jwtService = jwtService;
@@ -39,8 +41,11 @@ namespace AmazingFileVersionControl.Core.Services
                     Email = email,
                     PasswordHash = hashedPassword,
                     RoleInSystem = RoleInSystem.USER,
-                    Profile = new ProfileEntity { Id = Guid.NewGuid() }
+                    //Profile = new ProfileEntity()
                 };
+
+                //user.Profile.Id = Guid.NewGuid();
+                //user.Profile.UserId = user.Id;
 
                 await _userRepository.AddAsync(user);
 
