@@ -9,16 +9,16 @@ namespace AmazingFileVersionControl.Core.Services
     public class AuthService : IAuthService
     {
         private readonly IUserRepository _userRepository;
-        private readonly IJwtGenerator _jwtService;
-        private readonly IPasswordHasher _bcCryptService;
+        private readonly IJwtGenerator _jwtGenerator;
+        private readonly IPasswordHasher _passwordHasher;
 
         public AuthService(IUserRepository userRepository,
-            IJwtGenerator jwtService,
-            IPasswordHasher bcCryptService)
+            IJwtGenerator jwtGenerator,
+            IPasswordHasher passwordHasher)
         {
             _userRepository = userRepository;
-            _jwtService = jwtService;
-            _bcCryptService = bcCryptService;
+            _jwtGenerator = jwtGenerator;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<string> RegisterAsync(string login, string email, string password)
@@ -32,7 +32,7 @@ namespace AmazingFileVersionControl.Core.Services
                     throw new Exception("User with the same email or login already exists.");
                 }
 
-                var hashedPassword = _bcCryptService.HashPassword(password);
+                var hashedPassword = _passwordHasher.HashPassword(password);
 
                 var user = new UserEntity
                 {
@@ -41,15 +41,11 @@ namespace AmazingFileVersionControl.Core.Services
                     Email = email,
                     PasswordHash = hashedPassword,
                     RoleInSystem = RoleInSystem.USER,
-                    //Profile = new ProfileEntity()
                 };
-
-                //user.Profile.Id = Guid.NewGuid();
-                //user.Profile.UserId = user.Id;
 
                 await _userRepository.AddAsync(user);
 
-                return _jwtService.GenerateToken(user.Id, user.RoleInSystem.ToString(), user.Login);
+                return _jwtGenerator.GenerateToken(user.Id, user.RoleInSystem.ToString(), user.Login);
             }
             catch (Exception ex)
             {
@@ -57,18 +53,18 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task<string> LoginAsync(string loginOrEmail, string password)
+        public async Task<string> LoginAsync(string login, string password)
         {
             try
             {
-                var user = await _userRepository.GetOneByFilterAsync(u => u.Email == loginOrEmail || u.Login == loginOrEmail);
+                var user = await _userRepository.GetOneByFilterAsync(u => u.Login == login);
 
-                if (user == null || !_bcCryptService.VerifyPassword(password, user.PasswordHash))
+                if (user == null || !_passwordHasher.VerifyPassword(password, user.PasswordHash))
                 {
                     throw new Exception("Invalid login credentials.");
                 }
 
-                return _jwtService.GenerateToken(user.Id, user.RoleInSystem.ToString(), user.Login);
+                return _jwtGenerator.GenerateToken(user.Id, user.RoleInSystem.ToString(), user.Login);
             }
             catch (Exception ex)
             {

@@ -13,7 +13,6 @@ namespace AmazingFileVersionControl.Core.Contexts
     public class UserDbContext : DbContext
     {
         public DbSet<UserEntity> Users { get; set; }
-        //public DbSet<ProfileEntity> Profiles { get; set; }
 
         public UserDbContext()
         {
@@ -33,7 +32,6 @@ namespace AmazingFileVersionControl.Core.Contexts
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new UserEntityConfiguration());
-            //modelBuilder.ApplyConfiguration(new ProfileEntityConfiguration());
         }
     }
 }

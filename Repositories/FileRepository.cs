@@ -43,7 +43,6 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
-
         public async Task<Stream> DownloadAsync(BsonDocument query)
         {
             try
@@ -107,16 +106,32 @@ namespace AmazingFileVersionControl.Core.Repositories
 
                 if (fileInfo != null)
                 {
-                    var existingMetadata = fileInfo["metadata"].AsBsonDocument;
-                    var combinedMetadata = new BsonDocument(existingMetadata);
+                    var updateDefinitions = new List<UpdateDefinition<BsonDocument>>();
 
-                    foreach (var element in updatedMetadata)
+                    if (updatedMetadata.Contains("filename"))
                     {
-                        combinedMetadata[element.Name] = element.Value;
+                        updateDefinitions.Add(Builders<BsonDocument>.Update.Set("filename", updatedMetadata["filename"]));
+                        updatedMetadata.Remove("filename");
                     }
 
-                    var update = Builders<BsonDocument>.Update.Set("metadata", combinedMetadata);
-                    await filesCollection.UpdateOneAsync(query, update);
+                    if (updatedMetadata.ElementCount > 0)
+                    {
+                        var existingMetadata = fileInfo["metadata"].AsBsonDocument;
+                        var combinedMetadata = new BsonDocument(existingMetadata);
+
+                        foreach (var element in updatedMetadata)
+                        {
+                            combinedMetadata[element.Name] = element.Value;
+                        }
+
+                        updateDefinitions.Add(Builders<BsonDocument>.Update.Set("metadata", combinedMetadata));
+                    }
+
+                    if (updateDefinitions.Count > 0)
+                    {
+                        var update = Builders<BsonDocument>.Update.Combine(updateDefinitions);
+                        await filesCollection.UpdateOneAsync(query, update);
+                    }
                 }
             }
             catch (Exception ex)
@@ -134,16 +149,32 @@ namespace AmazingFileVersionControl.Core.Repositories
 
                 foreach (var fileInfo in await cursor.ToListAsync())
                 {
-                    var existingMetadata = fileInfo["metadata"].AsBsonDocument;
-                    var combinedMetadata = new BsonDocument(existingMetadata);
+                    var updateDefinitions = new List<UpdateDefinition<BsonDocument>>();
 
-                    foreach (var element in updatedMetadata)
+                    if (updatedMetadata.Contains("filename"))
                     {
-                        combinedMetadata[element.Name] = element.Value;
+                        updateDefinitions.Add(Builders<BsonDocument>.Update.Set("filename", updatedMetadata["filename"]));
+                        updatedMetadata.Remove("filename");
                     }
 
-                    var update = Builders<BsonDocument>.Update.Set("metadata", combinedMetadata);
-                    await filesCollection.UpdateOneAsync(Builders<BsonDocument>.Filter.Eq("_id", fileInfo["_id"]), update);
+                    if (updatedMetadata.ElementCount > 0)
+                    {
+                        var existingMetadata = fileInfo["metadata"].AsBsonDocument;
+                        var combinedMetadata = new BsonDocument(existingMetadata);
+
+                        foreach (var element in updatedMetadata)
+                        {
+                            combinedMetadata[element.Name] = element.Value;
+                        }
+
+                        updateDefinitions.Add(Builders<BsonDocument>.Update.Set("metadata", combinedMetadata));
+                    }
+
+                    if (updateDefinitions.Count > 0)
+                    {
+                        var update = Builders<BsonDocument>.Update.Combine(updateDefinitions);
+                        await filesCollection.UpdateOneAsync(Builders<BsonDocument>.Filter.Eq("_id", fileInfo["_id"]), update);
+                    }
                 }
             }
             catch (Exception ex)

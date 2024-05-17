@@ -85,7 +85,7 @@ namespace AmazingFileVersionControl.Core.Services
 
                 if (user.Login != oldLogin)
                 {
-                    await _fileService.UpdateAllOwnerFilesInfoAsync(oldLogin, new BsonDocument { { "owner", newLogin } });
+                    await _fileService.UpdateAllFilesInfoAsync(oldLogin, new BsonDocument { { "owner", newLogin } });
                 }
             }
             catch (Exception ex)
@@ -149,7 +149,7 @@ namespace AmazingFileVersionControl.Core.Services
             {
                 var user = await GetById(userId);
                 await _userRepository.DeleteOneByFilterAsync(u => u.Id == userId);
-                await _fileService.DeleteAllOwnerFilesAsync(user.Login);
+                await _fileService.DeleteAllFilesAsync(user.Login);
             }
             catch (Exception ex)
             {
