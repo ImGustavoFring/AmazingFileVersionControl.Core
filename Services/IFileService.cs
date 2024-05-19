@@ -9,7 +9,7 @@ namespace AmazingFileVersionControl.Core.Services
         Task DeleteFileAsync(string name, string owner, string type, string project);
         Task DeleteFileByVersionAsync(string name, string owner, string type, string project, long version);
         Task DeleteProjectFilesAsync(string owner, string project);
-        Task<(Stream, BsonDocument)> DownloadFileWithMetadataAsync(string name, string owner, string type, string project, long? version = null);
+        Task<(Stream, GridFSFileInfo)> DownloadFileWithMetadataAsync(string name, string owner, string type, string project, long? version = null);
         Task<List<GridFSFileInfo>> GetAllFilesInfoAsync(string owner);
         Task<List<GridFSFileInfo>> GetFileInfoAsync(string name, string owner, string type, string project);
         Task<GridFSFileInfo> GetFileInfoByVersionAsync(string name, string owner, string type, string project, long version);

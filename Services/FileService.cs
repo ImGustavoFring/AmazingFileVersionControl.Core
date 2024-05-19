@@ -63,7 +63,7 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task<(Stream, BsonDocument)> DownloadFileWithMetadataAsync(string name, string owner, string type, string project, long? version = null)
+        public async Task<(Stream, GridFSFileInfo)> DownloadFileWithMetadataAsync(string name, string owner, string type, string project, long? version = null)
         {
             if (version.HasValue && (version.Value < -1 || version.Value == 0))
             {
@@ -93,14 +93,13 @@ namespace AmazingFileVersionControl.Core.Services
                     throw new FileNotFoundException("File not found.");
                 }
 
-                return (stream, fileInfo.Metadata);
+                return (stream, fileInfo);
             }
             catch (Exception ex)
             {
                 throw new Exception("Error downloading file with metadata.", ex);
             }
         }
-
 
         public async Task<GridFSFileInfo> GetFileInfoByVersionAsync(string name,
             string owner, string type,

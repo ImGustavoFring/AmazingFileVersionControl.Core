@@ -7,50 +7,40 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.DTOs.FileDTOs
 {
-    public class UploadFileDto
+    public class FileUploadDTO
     {
         public string Name { get; set; }
-        public string Owner { get; set; }
         public string Type { get; set; }
         public string Project { get; set; }
         public IFormFile File { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
+        public string? Owner { get; set; }
         public long? Version { get; set; }
     }
 
-    public class FileInfoDto
+    public class FileQueryDTO
     {
         public string Name { get; set; }
-        public string Owner { get; set; }
         public string Type { get; set; }
         public string Project { get; set; }
         public long? Version { get; set; }
+        public string? Owner { get; set; }
     }
 
-    public class UpdateFileInfoDto
+    public class FileUpdateDTO
     {
         public string Name { get; set; }
-        public string Owner { get; set; }
         public string Type { get; set; }
         public string Project { get; set; }
-        public long Version { get; set; }
-        public string UpdatedMetadataJson { get; set; }
+        public string UpdatedMetadata { get; set; }
+        public long? Version { get; set; }
+        public string? Owner { get; set; }
     }
 
-    public class UpdateProjectFilesDto
+    public class UpdateAllFilesDTO
     {
-        public string Owner { get; set; }
+        public string UpdatedMetadata { get; set; }
         public string Project { get; set; }
-        public string UpdatedMetadataJson { get; set; }
+        public string? Owner { get; set; }
     }
-
-    public class DeleteFileDto
-    {
-        public string Name { get; set; }
-        public string Owner { get; set; }
-        public string Type { get; set; }
-        public string Project { get; set; }
-        public long Version { get; set; }
-    }
-
 }
