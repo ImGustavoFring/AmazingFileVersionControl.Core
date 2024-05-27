@@ -13,7 +13,7 @@ namespace AmazingFileVersionControl.Core.Repositories
         private readonly IMongoClient _client;
         private readonly IMongoDatabase _database;
         private readonly IMongoCollection<LogEntity> _logCollection;
-
+        
         public LoggingRepository(IMongoClient client, string databaseName)
         {
             _client = client;

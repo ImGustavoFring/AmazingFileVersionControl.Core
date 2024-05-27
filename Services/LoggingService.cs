@@ -19,7 +19,10 @@ namespace AmazingFileVersionControl.Core.Services
             _loggingRepository = loggingRepository;
         }
 
-        public async Task LogAsync(string controller, string action, string message, string level = "Info", BsonDocument additionalData = null)
+        public async Task LogAsync(string controller,
+            string action, string message,
+            string level = "Info",
+            BsonDocument additionalData = null)
         {
             try
             {
