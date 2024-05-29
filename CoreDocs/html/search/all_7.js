@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['iauthservice_0',['IAuthService',['../interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service.html',1,'AmazingFileVersionControl::Core::Services']]],
+  ['iauthservice_2ecs_1',['IAuthService.cs',['../_i_auth_service_8cs.html',1,'']]],
+  ['id_2',['Id',['../class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html#a787091be6b07c3d8baebea35c62e2aef',1,'AmazingFileVersionControl.Core.Models.LoggingEntities.LogEntity.Id'],['../class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html#afcabb50207f1cede096e00b441b47596',1,'AmazingFileVersionControl.Core.Models.UserDbEntities.UserEntity.Id']]],
+  ['ifilerepository_3',['IFileRepository',['../interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html',1,'AmazingFileVersionControl::Core::Repositories']]],
+  ['ifilerepository_2ecs_4',['IFileRepository.cs',['../_i_file_repository_8cs.html',1,'']]],
+  ['ifileservice_5',['IFileService',['../interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html',1,'AmazingFileVersionControl::Core::Services']]],
+  ['ifileservice_2ecs_6',['IFileService.cs',['../_i_file_service_8cs.html',1,'']]],
+  ['ijwtgenerator_7',['IJwtGenerator',['../interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_jwt_generator.html',1,'AmazingFileVersionControl::Core::Infrastructure']]],
+  ['iloggingrepository_8',['ILoggingRepository',['../interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html',1,'AmazingFileVersionControl::Core::Repositories']]],
+  ['iloggingrepository_2ecs_9',['ILoggingRepository.cs',['../_i_logging_repository_8cs.html',1,'']]],
+  ['iloggingservice_10',['ILoggingService',['../interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service.html',1,'AmazingFileVersionControl::Core::Services']]],
+  ['iloggingservice_2ecs_11',['ILoggingService.cs',['../_i_logging_service_8cs.html',1,'']]],
+  ['insertlogasync_12',['InsertLogAsync',['../interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html#a3c7a585c5a47a6c9c198322a823fce41',1,'AmazingFileVersionControl.Core.Repositories.ILoggingRepository.InsertLogAsync()'],['../class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository.html#a5d1ad41eae388d6f30e5ebbf5d12691b',1,'AmazingFileVersionControl.Core.Repositories.LoggingRepository.InsertLogAsync()']]],
+  ['ipasswordhasher_13',['IPasswordHasher',['../interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher.html',1,'AmazingFileVersionControl::Core::Infrastructure']]],
+  ['iuserrepository_14',['IUserRepository',['../interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html',1,'AmazingFileVersionControl::Core::Repositories']]],
+  ['iuserrepository_2ecs_15',['IUserRepository.cs',['../_i_user_repository_8cs.html',1,'']]],
+  ['iuserservice_16',['IUserService',['../interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html',1,'AmazingFileVersionControl::Core::Services']]],
+  ['iuserservice_2ecs_17',['IUserService.cs',['../_i_user_service_8cs.html',1,'']]]
+];

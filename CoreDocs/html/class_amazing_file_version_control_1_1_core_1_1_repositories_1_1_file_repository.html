@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AmazingFileVersionControl.Core: Класс AmazingFileVersionControl.Core.Repositories.FileRepository</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AmazingFileVersionControl.Core
+   </div>
+   <div id="projectbrief">Business Logic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_amazing_file_version_control.html">AmazingFileVersionControl</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_repositories.html">Repositories</a></li><li class="navelem"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository.html">FileRepository</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс AmazingFileVersionControl.Core.Repositories.FileRepository</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс репозитория для управления файлами.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:AmazingFileVersionControl.Core.Repositories.FileRepository:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository.png" usemap="#AmazingFileVersionControl.Core.Repositories.FileRepository_map" alt=""/>
+  <map id="AmazingFileVersionControl.Core.Repositories.FileRepository_map" name="AmazingFileVersionControl.Core.Repositories.FileRepository_map">
+<area href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html" title="Интерфейс репозитория для управления файлами." alt="AmazingFileVersionControl.Core.Repositories.IFileRepository" shape="rect" coords="0,0,359,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a92dba1c726a006c14d2cdcdb712a6605" id="r_a92dba1c726a006c14d2cdcdb712a6605"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92dba1c726a006c14d2cdcdb712a6605">FileRepository</a> (IMongoClient client, string databaseName)</td></tr>
+<tr class="memdesc:a92dba1c726a006c14d2cdcdb712a6605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository.html" title="Класс репозитория для управления файлами.">FileRepository</a>.  <br /></td></tr>
+<tr class="separator:a92dba1c726a006c14d2cdcdb712a6605"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59d2f754abc33615ecbb7ff2825985ed" id="r_a59d2f754abc33615ecbb7ff2825985ed"><td class="memItemLeft" align="right" valign="top">async Task&lt; ObjectId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59d2f754abc33615ecbb7ff2825985ed">UploadAsync</a> (string fileName, Stream stream, BsonDocument metadata)</td></tr>
+<tr class="memdesc:a59d2f754abc33615ecbb7ff2825985ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузить файл в базу данных.  <br /></td></tr>
+<tr class="separator:a59d2f754abc33615ecbb7ff2825985ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3396b7c2dfe169559b8bd2786c79d4b" id="r_ab3396b7c2dfe169559b8bd2786c79d4b"><td class="memItemLeft" align="right" valign="top">async Task&lt; Stream &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab3396b7c2dfe169559b8bd2786c79d4b">DownloadAsync</a> (BsonDocument query)</td></tr>
+<tr class="memdesc:ab3396b7c2dfe169559b8bd2786c79d4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скачать файл из базы данных.  <br /></td></tr>
+<tr class="separator:ab3396b7c2dfe169559b8bd2786c79d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210a7d3d25678de8cf26f85c54c3fe3e" id="r_a210a7d3d25678de8cf26f85c54c3fe3e"><td class="memItemLeft" align="right" valign="top">async Task&lt; GridFSFileInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a210a7d3d25678de8cf26f85c54c3fe3e">GetOneAsync</a> (BsonDocument query)</td></tr>
+<tr class="memdesc:a210a7d3d25678de8cf26f85c54c3fe3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить информацию о файле.  <br /></td></tr>
+<tr class="separator:a210a7d3d25678de8cf26f85c54c3fe3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ff400b3510c9f283be5b21234bdba05" id="r_a2ff400b3510c9f283be5b21234bdba05"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; GridFSFileInfo &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2ff400b3510c9f283be5b21234bdba05">GetManyAsync</a> (BsonDocument query)</td></tr>
+<tr class="memdesc:a2ff400b3510c9f283be5b21234bdba05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить информацию о нескольких файлах.  <br /></td></tr>
+<tr class="separator:a2ff400b3510c9f283be5b21234bdba05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3744a4a90ade4b0ed4d4e6cbc07b515d" id="r_a3744a4a90ade4b0ed4d4e6cbc07b515d"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3744a4a90ade4b0ed4d4e6cbc07b515d">UpdateOneAsync</a> (BsonDocument query, BsonDocument updatedMetadata)</td></tr>
+<tr class="memdesc:a3744a4a90ade4b0ed4d4e6cbc07b515d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить информацию о файле.  <br /></td></tr>
+<tr class="separator:a3744a4a90ade4b0ed4d4e6cbc07b515d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6fe7fd2e0ae671536b8dfec9cf7643" id="r_a8d6fe7fd2e0ae671536b8dfec9cf7643"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d6fe7fd2e0ae671536b8dfec9cf7643">UpdateManyAsync</a> (BsonDocument query, BsonDocument updatedMetadata)</td></tr>
+<tr class="memdesc:a8d6fe7fd2e0ae671536b8dfec9cf7643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить информацию о нескольких файлах.  <br /></td></tr>
+<tr class="separator:a8d6fe7fd2e0ae671536b8dfec9cf7643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3824bba9140366ba989c305b82624967" id="r_a3824bba9140366ba989c305b82624967"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3824bba9140366ba989c305b82624967">DeleteOneAsync</a> (BsonDocument query)</td></tr>
+<tr class="memdesc:a3824bba9140366ba989c305b82624967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить файл.  <br /></td></tr>
+<tr class="separator:a3824bba9140366ba989c305b82624967"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad539b68318275ab14f4f5a23b0485303" id="r_ad539b68318275ab14f4f5a23b0485303"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad539b68318275ab14f4f5a23b0485303">DeleteManyAsync</a> (BsonDocument query)</td></tr>
+<tr class="memdesc:ad539b68318275ab14f4f5a23b0485303"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить несколько файлов.  <br /></td></tr>
+<tr class="separator:ad539b68318275ab14f4f5a23b0485303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс репозитория для управления файлами. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a92dba1c726a006c14d2cdcdb712a6605" name="a92dba1c726a006c14d2cdcdb712a6605"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92dba1c726a006c14d2cdcdb712a6605">&#9670;&#160;</a></span>FileRepository()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AmazingFileVersionControl.Core.Repositories.FileRepository.FileRepository </td>
+          <td>(</td>
+          <td class="paramtype">IMongoClient</td>          <td class="paramname"><span class="paramname"><em>client</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>databaseName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository.html" title="Класс репозитория для управления файлами.">FileRepository</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Клиент MongoDB. </td></tr>
+    <tr><td class="paramname">databaseName</td><td>Название базы данных. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="ad539b68318275ab14f4f5a23b0485303" name="ad539b68318275ab14f4f5a23b0485303"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad539b68318275ab14f4f5a23b0485303">&#9670;&#160;</a></span>DeleteManyAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.FileRepository.DeleteManyAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить несколько файлов. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#a4f56da8046f509772bb33b4afa983b50">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="a3824bba9140366ba989c305b82624967" name="a3824bba9140366ba989c305b82624967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3824bba9140366ba989c305b82624967">&#9670;&#160;</a></span>DeleteOneAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.FileRepository.DeleteOneAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить файл. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#a9e599627d86ed7c10c68540fa912e77b">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="ab3396b7c2dfe169559b8bd2786c79d4b" name="ab3396b7c2dfe169559b8bd2786c79d4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3396b7c2dfe169559b8bd2786c79d4b">&#9670;&#160;</a></span>DownloadAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; Stream &gt; AmazingFileVersionControl.Core.Repositories.FileRepository.DownloadAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Скачать файл из базы данных. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Поток данных файла. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#a6561944735488f4b43d312df0beea404">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="a2ff400b3510c9f283be5b21234bdba05" name="a2ff400b3510c9f283be5b21234bdba05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ff400b3510c9f283be5b21234bdba05">&#9670;&#160;</a></span>GetManyAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; GridFSFileInfo &gt; &gt; AmazingFileVersionControl.Core.Repositories.FileRepository.GetManyAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить информацию о нескольких файлах. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список информации о файлах. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#a8b04434dbf2909eb91bf689e011f0b7c">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="a210a7d3d25678de8cf26f85c54c3fe3e" name="a210a7d3d25678de8cf26f85c54c3fe3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a210a7d3d25678de8cf26f85c54c3fe3e">&#9670;&#160;</a></span>GetOneAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; GridFSFileInfo &gt; AmazingFileVersionControl.Core.Repositories.FileRepository.GetOneAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить информацию о файле. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Информация о файле. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#afee84315592c51b9f0d2090ab69afea6">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="a8d6fe7fd2e0ae671536b8dfec9cf7643" name="a8d6fe7fd2e0ae671536b8dfec9cf7643"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d6fe7fd2e0ae671536b8dfec9cf7643">&#9670;&#160;</a></span>UpdateManyAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.FileRepository.UpdateManyAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>updatedMetadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить информацию о нескольких файлах. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файлов. </td></tr>
+    <tr><td class="paramname">updatedMetadata</td><td>Обновленные метаданные файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#a560c8720c8b4092d2ed386f3c5a0c791">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="a3744a4a90ade4b0ed4d4e6cbc07b515d" name="a3744a4a90ade4b0ed4d4e6cbc07b515d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3744a4a90ade4b0ed4d4e6cbc07b515d">&#9670;&#160;</a></span>UpdateOneAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.FileRepository.UpdateOneAsync </td>
+          <td>(</td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>query</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>updatedMetadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить информацию о файле. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">query</td><td>Запрос для поиска файла. </td></tr>
+    <tr><td class="paramname">updatedMetadata</td><td>Обновленные метаданные файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#af2c2ffe1ff9e3a115e8a44ebf97a69e3">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<a id="a59d2f754abc33615ecbb7ff2825985ed" name="a59d2f754abc33615ecbb7ff2825985ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59d2f754abc33615ecbb7ff2825985ed">&#9670;&#160;</a></span>UploadAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ObjectId &gt; AmazingFileVersionControl.Core.Repositories.FileRepository.UploadAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>fileName</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>metadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загрузить файл в базу данных. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">stream</td><td>Поток данных файла. </td></tr>
+    <tr><td class="paramname">metadata</td><td>Метаданные файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Идентификатор загруженного файла. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html#a096d6b5fabd5adc15d4e1671aebccd33">AmazingFileVersionControl.Core.Repositories.IFileRepository</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Repositories/<a class="el" href="_file_repository_8cs.html">FileRepository.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

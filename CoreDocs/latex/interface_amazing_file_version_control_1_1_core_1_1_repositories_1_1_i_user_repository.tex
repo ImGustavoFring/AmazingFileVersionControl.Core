@@ -1,0 +1,184 @@
+\doxysection{Интерфейс Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository}
+\hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository}{}\label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+
+
+Интерфейс репозитория для управления пользователями.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_aa304e8b5837bedcc54d348c8a16fdd4c}{Add\+Async}} (\mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} user)
+\begin{DoxyCompactList}\small\item\em Добавить нового пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a1a8266fd3ba810a69f1e786c4cdcee17}{Delete\+Many\+By\+Filter\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$ filter)
+\begin{DoxyCompactList}\small\item\em Удалить несколько пользователей по фильтру. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_ac176452838fdb6cf73b271ab1b1107d2}{Delete\+One\+By\+Filter\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$ filter)
+\begin{DoxyCompactList}\small\item\em Удалить одного пользователя по фильтру. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a8fed7254971686c9fb38ee58f9f0e4e4}{Get\+Many\+By\+Filter\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$ filter)
+\begin{DoxyCompactList}\small\item\em Получить список пользователей по фильтру. \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a97694550da0c555120f6d930e634df54}{Get\+One\+By\+Filter\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$ filter)
+\begin{DoxyCompactList}\small\item\em Получить одного пользователя по фильтру. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_ab06467f0136658779a41c93b4e374ea9}{Update\+Many\+By\+Filter\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$ filter, Action$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ update\+Action)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о нескольких пользователях по фильтру. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a87b61ad121de5654a49281187e0685d3}{Update\+One\+By\+Filter\+Async}} (Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$ filter, Action$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ update\+Action)
+\begin{DoxyCompactList}\small\item\em Обновить информацию об одном пользователе по фильтру. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс репозитория для управления пользователями. 
+
+\doxysubsection{Методы}
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_aa304e8b5837bedcc54d348c8a16fdd4c}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!AddAsync@{AddAsync}}
+\index{AddAsync@{AddAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{AddAsync()}{AddAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_aa304e8b5837bedcc54d348c8a16fdd4c} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Add\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}}]{user}{}\end{DoxyParamCaption})}
+
+
+
+Добавить нового пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user} & Пользователь. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_a743a0af75bd0c7dcf44f954e567aeea8}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a1a8266fd3ba810a69f1e786c4cdcee17}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!DeleteManyByFilterAsync@{DeleteManyByFilterAsync}}
+\index{DeleteManyByFilterAsync@{DeleteManyByFilterAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteManyByFilterAsync()}{DeleteManyByFilterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a1a8266fd3ba810a69f1e786c4cdcee17} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Delete\+Many\+By\+Filter\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$}]{filter}{}\end{DoxyParamCaption})}
+
+
+
+Удалить несколько пользователей по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователей. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_aa427d8becb0eaaa5cf0d9ed2c765b0b9}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_ac176452838fdb6cf73b271ab1b1107d2}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!DeleteOneByFilterAsync@{DeleteOneByFilterAsync}}
+\index{DeleteOneByFilterAsync@{DeleteOneByFilterAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteOneByFilterAsync()}{DeleteOneByFilterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_ac176452838fdb6cf73b271ab1b1107d2} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Delete\+One\+By\+Filter\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$}]{filter}{}\end{DoxyParamCaption})}
+
+
+
+Удалить одного пользователя по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_a349a3ae1b7c060936c6fb78b48ae20d8}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a8fed7254971686c9fb38ee58f9f0e4e4}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!GetManyByFilterAsync@{GetManyByFilterAsync}}
+\index{GetManyByFilterAsync@{GetManyByFilterAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{GetManyByFilterAsync()}{GetManyByFilterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a8fed7254971686c9fb38ee58f9f0e4e4} 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Get\+Many\+By\+Filter\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$}]{filter}{}\end{DoxyParamCaption})}
+
+
+
+Получить список пользователей по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователей. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список найденных пользователей. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_a0d4dbf8f7691d80d5e061f7435d64b54}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a97694550da0c555120f6d930e634df54}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!GetOneByFilterAsync@{GetOneByFilterAsync}}
+\index{GetOneByFilterAsync@{GetOneByFilterAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{GetOneByFilterAsync()}{GetOneByFilterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a97694550da0c555120f6d930e634df54} 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Get\+One\+By\+Filter\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$}]{filter}{}\end{DoxyParamCaption})}
+
+
+
+Получить одного пользователя по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденный пользователь. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_a67f93e2c079e40ebb369c91e114dc4dc}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_ab06467f0136658779a41c93b4e374ea9}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!UpdateManyByFilterAsync@{UpdateManyByFilterAsync}}
+\index{UpdateManyByFilterAsync@{UpdateManyByFilterAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateManyByFilterAsync()}{UpdateManyByFilterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_ab06467f0136658779a41c93b4e374ea9} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Update\+Many\+By\+Filter\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$}]{filter}{, }\item[{Action$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$}]{update\+Action}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о нескольких пользователях по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователей. \\
+\hline
+{\em update\+Action} & Действие для обновления. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_ada9da58802e7f509ae2cce4ec1d088bd}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a87b61ad121de5654a49281187e0685d3}\index{AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}!UpdateOneByFilterAsync@{UpdateOneByFilterAsync}}
+\index{UpdateOneByFilterAsync@{UpdateOneByFilterAsync}!AmazingFileVersionControl.Core.Repositories.IUserRepository@{AmazingFileVersionControl.Core.Repositories.IUserRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateOneByFilterAsync()}{UpdateOneByFilterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository_a87b61ad121de5654a49281187e0685d3} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IUser\+Repository.\+Update\+One\+By\+Filter\+Async (\begin{DoxyParamCaption}\item[{Expression$<$ Func$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}}, bool $>$ $>$}]{filter}{, }\item[{Action$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$}]{update\+Action}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию об одном пользователе по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска пользователя. \\
+\hline
+{\em update\+Action} & Действие для обновления. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository_ab266170bf2c2a600c2a6a317deb30d6d}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+User\+Repository}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\mbox{\hyperlink{_i_user_repository_8cs}{IUser\+Repository.\+cs}}\end{DoxyCompactItemize}

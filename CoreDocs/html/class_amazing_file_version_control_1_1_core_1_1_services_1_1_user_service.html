@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AmazingFileVersionControl.Core: Класс AmazingFileVersionControl.Core.Services.UserService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AmazingFileVersionControl.Core
+   </div>
+   <div id="projectbrief">Business Logic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_amazing_file_version_control.html">AmazingFileVersionControl</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_services.html">Services</a></li><li class="navelem"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service.html">UserService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс AmazingFileVersionControl.Core.Services.UserService</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс сервиса для управления пользователями.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:AmazingFileVersionControl.Core.Services.UserService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service.png" usemap="#AmazingFileVersionControl.Core.Services.UserService_map" alt=""/>
+  <map id="AmazingFileVersionControl.Core.Services.UserService_map" name="AmazingFileVersionControl.Core.Services.UserService_map">
+<area href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html" title="Интерфейс сервиса для управления пользователями." alt="AmazingFileVersionControl.Core.Services.IUserService" shape="rect" coords="0,0,329,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a60089d22aca9ae3047565db1f7d231b7" id="r_a60089d22aca9ae3047565db1f7d231b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60089d22aca9ae3047565db1f7d231b7">UserService</a> (<a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html">IUserRepository</a> userRepository, <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html">IFileService</a> fileService, <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher.html">IPasswordHasher</a> passwordHasher)</td></tr>
+<tr class="memdesc:a60089d22aca9ae3047565db1f7d231b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service.html" title="Класс сервиса для управления пользователями.">UserService</a>.  <br /></td></tr>
+<tr class="separator:a60089d22aca9ae3047565db1f7d231b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef28df6945c6b3144dce25a7cb5b4f21" id="r_aef28df6945c6b3144dce25a7cb5b4f21"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef28df6945c6b3144dce25a7cb5b4f21">GetById</a> (string userId)</td></tr>
+<tr class="memdesc:aef28df6945c6b3144dce25a7cb5b4f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить пользователя по идентификатору.  <br /></td></tr>
+<tr class="separator:aef28df6945c6b3144dce25a7cb5b4f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a341d6b422ad5ea37e3adb907576596b4" id="r_a341d6b422ad5ea37e3adb907576596b4"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a341d6b422ad5ea37e3adb907576596b4">GetByLogin</a> (string userLogin)</td></tr>
+<tr class="memdesc:a341d6b422ad5ea37e3adb907576596b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить пользователя по логину.  <br /></td></tr>
+<tr class="separator:a341d6b422ad5ea37e3adb907576596b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb235ccbe7f29fdfd4775cf90109d32" id="r_afbb235ccbe7f29fdfd4775cf90109d32"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afbb235ccbe7f29fdfd4775cf90109d32">GetAllByLoginSubstring</a> (string loginSubstring)</td></tr>
+<tr class="memdesc:afbb235ccbe7f29fdfd4775cf90109d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список пользователей по подстроке логина.  <br /></td></tr>
+<tr class="separator:afbb235ccbe7f29fdfd4775cf90109d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a720af3cb3fabd19a1ecbf21198ae88e3" id="r_a720af3cb3fabd19a1ecbf21198ae88e3"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a720af3cb3fabd19a1ecbf21198ae88e3">GetAllByEmailSubstring</a> (string emailSubstring)</td></tr>
+<tr class="memdesc:a720af3cb3fabd19a1ecbf21198ae88e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список пользователей по подстроке электронной почты.  <br /></td></tr>
+<tr class="separator:a720af3cb3fabd19a1ecbf21198ae88e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68890da997fd06f5c80a2a34c242cdc" id="r_ab68890da997fd06f5c80a2a34c242cdc"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab68890da997fd06f5c80a2a34c242cdc">GetAll</a> ()</td></tr>
+<tr class="memdesc:ab68890da997fd06f5c80a2a34c242cdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список всех пользователей.  <br /></td></tr>
+<tr class="separator:ab68890da997fd06f5c80a2a34c242cdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a566e96ec1380408e1e8edaa6b48e7947" id="r_a566e96ec1380408e1e8edaa6b48e7947"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a566e96ec1380408e1e8edaa6b48e7947">ChangeLogin</a> (string userId, string newLogin)</td></tr>
+<tr class="memdesc:a566e96ec1380408e1e8edaa6b48e7947"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить логин пользователя.  <br /></td></tr>
+<tr class="separator:a566e96ec1380408e1e8edaa6b48e7947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52a053583a7ac82e62d61b44c9048cb4" id="r_a52a053583a7ac82e62d61b44c9048cb4"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a52a053583a7ac82e62d61b44c9048cb4">ChangeEmail</a> (string userId, string newEmail)</td></tr>
+<tr class="memdesc:a52a053583a7ac82e62d61b44c9048cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить электронную почту пользователя.  <br /></td></tr>
+<tr class="separator:a52a053583a7ac82e62d61b44c9048cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3a0c7c8cebed474ec0eccfdf3d2f85" id="r_a4a3a0c7c8cebed474ec0eccfdf3d2f85"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a3a0c7c8cebed474ec0eccfdf3d2f85">ChangePassword</a> (string userId, string newPassword)</td></tr>
+<tr class="memdesc:a4a3a0c7c8cebed474ec0eccfdf3d2f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить пароль пользователя.  <br /></td></tr>
+<tr class="separator:a4a3a0c7c8cebed474ec0eccfdf3d2f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46430f5f7890d38cd5526ad3ed223f57" id="r_a46430f5f7890d38cd5526ad3ed223f57"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46430f5f7890d38cd5526ad3ed223f57">ChangeRole</a> (string userId, <a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities.html#a6f7b8e859f1a1c62ae9f8687c3419042">RoleInSystem</a> newRole)</td></tr>
+<tr class="memdesc:a46430f5f7890d38cd5526ad3ed223f57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Изменить роль пользователя.  <br /></td></tr>
+<tr class="separator:a46430f5f7890d38cd5526ad3ed223f57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1fb7d5b212b7def251841e643862da" id="r_a4a1fb7d5b212b7def251841e643862da"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a1fb7d5b212b7def251841e643862da">DeleteById</a> (string userId)</td></tr>
+<tr class="memdesc:a4a1fb7d5b212b7def251841e643862da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить пользователя по идентификатору.  <br /></td></tr>
+<tr class="separator:a4a1fb7d5b212b7def251841e643862da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс сервиса для управления пользователями. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a60089d22aca9ae3047565db1f7d231b7" name="a60089d22aca9ae3047565db1f7d231b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60089d22aca9ae3047565db1f7d231b7">&#9670;&#160;</a></span>UserService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AmazingFileVersionControl.Core.Services.UserService.UserService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html">IUserRepository</a></td>          <td class="paramname"><span class="paramname"><em>userRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html">IFileService</a></td>          <td class="paramname"><span class="paramname"><em>fileService</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher.html">IPasswordHasher</a></td>          <td class="paramname"><span class="paramname"><em>passwordHasher</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service.html" title="Класс сервиса для управления пользователями.">UserService</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userRepository</td><td>Репозиторий пользователей. </td></tr>
+    <tr><td class="paramname">fileService</td><td>Сервис для работы с файлами. </td></tr>
+    <tr><td class="paramname">passwordHasher</td><td>Хэшер паролей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a52a053583a7ac82e62d61b44c9048cb4" name="a52a053583a7ac82e62d61b44c9048cb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52a053583a7ac82e62d61b44c9048cb4">&#9670;&#160;</a></span>ChangeEmail()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.UserService.ChangeEmail </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>newEmail</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменить электронную почту пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">newEmail</td><td>Новая электронная почта пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a6f2b8d33c28541f627ab287ef1716f96">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="a566e96ec1380408e1e8edaa6b48e7947" name="a566e96ec1380408e1e8edaa6b48e7947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a566e96ec1380408e1e8edaa6b48e7947">&#9670;&#160;</a></span>ChangeLogin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.UserService.ChangeLogin </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>newLogin</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменить логин пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">newLogin</td><td>Новый логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a551a97c9ae843e7064edafdb288b5170">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="a4a3a0c7c8cebed474ec0eccfdf3d2f85" name="a4a3a0c7c8cebed474ec0eccfdf3d2f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3a0c7c8cebed474ec0eccfdf3d2f85">&#9670;&#160;</a></span>ChangePassword()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.UserService.ChangePassword </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>newPassword</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменить пароль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">newPassword</td><td>Новый пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#aeca303dbfcfb873e815c12e3bf197595">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="a46430f5f7890d38cd5526ad3ed223f57" name="a46430f5f7890d38cd5526ad3ed223f57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46430f5f7890d38cd5526ad3ed223f57">&#9670;&#160;</a></span>ChangeRole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.UserService.ChangeRole </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userId</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities.html#a6f7b8e859f1a1c62ae9f8687c3419042">RoleInSystem</a></td>          <td class="paramname"><span class="paramname"><em>newRole</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Изменить роль пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+    <tr><td class="paramname">newRole</td><td>Новая роль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a952e126620dce211d06cb73e393051d9">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="a4a1fb7d5b212b7def251841e643862da" name="a4a1fb7d5b212b7def251841e643862da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a1fb7d5b212b7def251841e643862da">&#9670;&#160;</a></span>DeleteById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.UserService.DeleteById </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить пользователя по идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a8921147e372f167966aa036c1c08c40f">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="ab68890da997fd06f5c80a2a34c242cdc" name="ab68890da997fd06f5c80a2a34c242cdc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68890da997fd06f5c80a2a34c242cdc">&#9670;&#160;</a></span>GetAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt; AmazingFileVersionControl.Core.Services.UserService.GetAll </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить список всех пользователей. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Список всех пользователей. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a6171c0e7b47626d09e304bea411644a0">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="a720af3cb3fabd19a1ecbf21198ae88e3" name="a720af3cb3fabd19a1ecbf21198ae88e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a720af3cb3fabd19a1ecbf21198ae88e3">&#9670;&#160;</a></span>GetAllByEmailSubstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt; AmazingFileVersionControl.Core.Services.UserService.GetAllByEmailSubstring </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>emailSubstring</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить список пользователей по подстроке электронной почты. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">emailSubstring</td><td>Подстрока электронной почты. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список найденных пользователей. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#ac9d79b3144aa4579886d9c5d7a9ede9f">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="afbb235ccbe7f29fdfd4775cf90109d32" name="afbb235ccbe7f29fdfd4775cf90109d32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb235ccbe7f29fdfd4775cf90109d32">&#9670;&#160;</a></span>GetAllByLoginSubstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt; AmazingFileVersionControl.Core.Services.UserService.GetAllByLoginSubstring </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>loginSubstring</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить список пользователей по подстроке логина. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loginSubstring</td><td>Подстрока логина. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список найденных пользователей. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a0476c8e7890954a4233a72eca9fcdffe">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="aef28df6945c6b3144dce25a7cb5b4f21" name="aef28df6945c6b3144dce25a7cb5b4f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef28df6945c6b3144dce25a7cb5b4f21">&#9670;&#160;</a></span>GetById()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; AmazingFileVersionControl.Core.Services.UserService.GetById </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userId</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить пользователя по идентификатору. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userId</td><td>Идентификатор пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Найденный пользователь. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#acac81f9f2e47e169ec834d6259a732f7">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<a id="a341d6b422ad5ea37e3adb907576596b4" name="a341d6b422ad5ea37e3adb907576596b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a341d6b422ad5ea37e3adb907576596b4">&#9670;&#160;</a></span>GetByLogin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; AmazingFileVersionControl.Core.Services.UserService.GetByLogin </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>userLogin</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить пользователя по логину. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userLogin</td><td>Логин пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Найденный пользователь. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service.html#a10abcc471a311cf45c6c8f11b5735b1a">AmazingFileVersionControl.Core.Services.IUserService</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Services/<a class="el" href="_user_service_8cs.html">UserService.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

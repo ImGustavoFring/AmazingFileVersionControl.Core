@@ -1,0 +1,313 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AmazingFileVersionControl.Core: Класс AmazingFileVersionControl.Core.Repositories.LoggingRepository</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AmazingFileVersionControl.Core
+   </div>
+   <div id="projectbrief">Business Logic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_amazing_file_version_control.html">AmazingFileVersionControl</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_repositories.html">Repositories</a></li><li class="navelem"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository.html">LoggingRepository</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс AmazingFileVersionControl.Core.Repositories.LoggingRepository</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс репозитория для управления логами.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:AmazingFileVersionControl.Core.Repositories.LoggingRepository:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository.png" usemap="#AmazingFileVersionControl.Core.Repositories.LoggingRepository_map" alt=""/>
+  <map id="AmazingFileVersionControl.Core.Repositories.LoggingRepository_map" name="AmazingFileVersionControl.Core.Repositories.LoggingRepository_map">
+<area href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html" title="Интерфейс репозитория для управления логами." alt="AmazingFileVersionControl.Core.Repositories.ILoggingRepository" shape="rect" coords="0,0,383,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a945804bca560045ce65e46bec3e9f402" id="r_a945804bca560045ce65e46bec3e9f402"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a945804bca560045ce65e46bec3e9f402">LoggingRepository</a> (IMongoClient client, string databaseName)</td></tr>
+<tr class="memdesc:a945804bca560045ce65e46bec3e9f402"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository.html" title="Класс репозитория для управления логами.">LoggingRepository</a>.  <br /></td></tr>
+<tr class="separator:a945804bca560045ce65e46bec3e9f402"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d1ad41eae388d6f30e5ebbf5d12691b" id="r_a5d1ad41eae388d6f30e5ebbf5d12691b"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d1ad41eae388d6f30e5ebbf5d12691b">InsertLogAsync</a> (<a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> logEntry)</td></tr>
+<tr class="memdesc:a5d1ad41eae388d6f30e5ebbf5d12691b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вставить запись лога в базу данных.  <br /></td></tr>
+<tr class="separator:a5d1ad41eae388d6f30e5ebbf5d12691b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157b30a5ab874ed05b4ebfa6bfb3b235" id="r_a157b30a5ab874ed05b4ebfa6bfb3b235"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a157b30a5ab874ed05b4ebfa6bfb3b235">GetLogAsync</a> (FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; filter)</td></tr>
+<tr class="memdesc:a157b30a5ab874ed05b4ebfa6bfb3b235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить запись лога по фильтру.  <br /></td></tr>
+<tr class="separator:a157b30a5ab874ed05b4ebfa6bfb3b235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34d3357f7380d6982567315e728f340a" id="r_a34d3357f7380d6982567315e728f340a"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34d3357f7380d6982567315e728f340a">GetLogsAsync</a> (FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; filter=null)</td></tr>
+<tr class="memdesc:a34d3357f7380d6982567315e728f340a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список логов по фильтру.  <br /></td></tr>
+<tr class="separator:a34d3357f7380d6982567315e728f340a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa0821329e0590ec843147d85c09f490" id="r_afa0821329e0590ec843147d85c09f490"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afa0821329e0590ec843147d85c09f490">DeleteLogAsync</a> (FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; filter)</td></tr>
+<tr class="memdesc:afa0821329e0590ec843147d85c09f490"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить запись лога по фильтру.  <br /></td></tr>
+<tr class="separator:afa0821329e0590ec843147d85c09f490"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25fddede04da69566e8b769ce2fac66b" id="r_a25fddede04da69566e8b769ce2fac66b"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25fddede04da69566e8b769ce2fac66b">DeleteLogsAsync</a> (FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; filter=null)</td></tr>
+<tr class="memdesc:a25fddede04da69566e8b769ce2fac66b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить список логов по фильтру.  <br /></td></tr>
+<tr class="separator:a25fddede04da69566e8b769ce2fac66b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс репозитория для управления логами. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a945804bca560045ce65e46bec3e9f402" name="a945804bca560045ce65e46bec3e9f402"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a945804bca560045ce65e46bec3e9f402">&#9670;&#160;</a></span>LoggingRepository()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AmazingFileVersionControl.Core.Repositories.LoggingRepository.LoggingRepository </td>
+          <td>(</td>
+          <td class="paramtype">IMongoClient</td>          <td class="paramname"><span class="paramname"><em>client</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>databaseName</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository.html" title="Класс репозитория для управления логами.">LoggingRepository</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Клиент MongoDB. </td></tr>
+    <tr><td class="paramname">databaseName</td><td>Название базы данных. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="afa0821329e0590ec843147d85c09f490" name="afa0821329e0590ec843147d85c09f490"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa0821329e0590ec843147d85c09f490">&#9670;&#160;</a></span>DeleteLogAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.LoggingRepository.DeleteLogAsync </td>
+          <td>(</td>
+          <td class="paramtype">FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить запись лога по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска лога. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html#a26c2f77cf864fe88583e1365ebfecc9a">AmazingFileVersionControl.Core.Repositories.ILoggingRepository</a>.</p>
+
+</div>
+</div>
+<a id="a25fddede04da69566e8b769ce2fac66b" name="a25fddede04da69566e8b769ce2fac66b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25fddede04da69566e8b769ce2fac66b">&#9670;&#160;</a></span>DeleteLogsAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.LoggingRepository.DeleteLogsAsync </td>
+          <td>(</td>
+          <td class="paramtype">FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить список логов по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска логов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html#a9aef78cb35b452125a488737942fc2af">AmazingFileVersionControl.Core.Repositories.ILoggingRepository</a>.</p>
+
+</div>
+</div>
+<a id="a157b30a5ab874ed05b4ebfa6bfb3b235" name="a157b30a5ab874ed05b4ebfa6bfb3b235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157b30a5ab874ed05b4ebfa6bfb3b235">&#9670;&#160;</a></span>GetLogAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; AmazingFileVersionControl.Core.Repositories.LoggingRepository.GetLogAsync </td>
+          <td>(</td>
+          <td class="paramtype">FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить запись лога по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска лога. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Найденная запись лога. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html#a329f64154148e2c2e51dfe692e73383e">AmazingFileVersionControl.Core.Repositories.ILoggingRepository</a>.</p>
+
+</div>
+</div>
+<a id="a34d3357f7380d6982567315e728f340a" name="a34d3357f7380d6982567315e728f340a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34d3357f7380d6982567315e728f340a">&#9670;&#160;</a></span>GetLogsAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt; &gt; AmazingFileVersionControl.Core.Repositories.LoggingRepository.GetLogsAsync </td>
+          <td>(</td>
+          <td class="paramtype">FilterDefinition&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить список логов по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска логов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список найденных логов. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html#ad61113724b4f80c88bda8d67fc49a74a">AmazingFileVersionControl.Core.Repositories.ILoggingRepository</a>.</p>
+
+</div>
+</div>
+<a id="a5d1ad41eae388d6f30e5ebbf5d12691b" name="a5d1ad41eae388d6f30e5ebbf5d12691b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d1ad41eae388d6f30e5ebbf5d12691b">&#9670;&#160;</a></span>InsertLogAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.LoggingRepository.InsertLogAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html">LogEntity</a></td>          <td class="paramname"><span class="paramname"><em>logEntry</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вставить запись лога в базу данных. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logEntry</td><td>Запись лога. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository.html#a3c7a585c5a47a6c9c198322a823fce41">AmazingFileVersionControl.Core.Repositories.ILoggingRepository</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Repositories/<a class="el" href="_logging_repository_8cs.html">LoggingRepository.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

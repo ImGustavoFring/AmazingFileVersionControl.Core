@@ -1,0 +1,798 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AmazingFileVersionControl.Core: Класс AmazingFileVersionControl.Core.Services.FileService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AmazingFileVersionControl.Core
+   </div>
+   <div id="projectbrief">Business Logic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_amazing_file_version_control.html">AmazingFileVersionControl</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_services.html">Services</a></li><li class="navelem"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service.html">FileService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс AmazingFileVersionControl.Core.Services.FileService</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс сервиса для управления файлами.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:AmazingFileVersionControl.Core.Services.FileService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service.png" usemap="#AmazingFileVersionControl.Core.Services.FileService_map" alt=""/>
+  <map id="AmazingFileVersionControl.Core.Services.FileService_map" name="AmazingFileVersionControl.Core.Services.FileService_map">
+<area href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html" title="Интерфейс сервиса для управления файлами." alt="AmazingFileVersionControl.Core.Services.IFileService" shape="rect" coords="0,0,324,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a205db6ad0d850f487d6ba805705b6e48" id="r_a205db6ad0d850f487d6ba805705b6e48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a205db6ad0d850f487d6ba805705b6e48">FileService</a> (<a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html">IFileRepository</a> fileRepository)</td></tr>
+<tr class="memdesc:a205db6ad0d850f487d6ba805705b6e48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service.html" title="Класс сервиса для управления файлами.">FileService</a>.  <br /></td></tr>
+<tr class="separator:a205db6ad0d850f487d6ba805705b6e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21c83e0d9dedb5cbbc4e42d3c1fd8b3" id="r_ab21c83e0d9dedb5cbbc4e42d3c1fd8b3"><td class="memItemLeft" align="right" valign="top">async Task&lt; ObjectId &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab21c83e0d9dedb5cbbc4e42d3c1fd8b3">UploadFileAsync</a> (string name, string owner, string type, string project, Stream stream, string? description=null, long? version=null)</td></tr>
+<tr class="memdesc:ab21c83e0d9dedb5cbbc4e42d3c1fd8b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Загрузить файл.  <br /></td></tr>
+<tr class="separator:ab21c83e0d9dedb5cbbc4e42d3c1fd8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4861293363804d09cdb4a9cc6ffd09a0" id="r_a4861293363804d09cdb4a9cc6ffd09a0"><td class="memItemLeft" align="right" valign="top">async Task&lt;(Stream, GridFSFileInfo)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4861293363804d09cdb4a9cc6ffd09a0">DownloadFileWithMetadataAsync</a> (string name, string owner, string type, string project, long? version=null)</td></tr>
+<tr class="memdesc:a4861293363804d09cdb4a9cc6ffd09a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Скачать файл с метаданными.  <br /></td></tr>
+<tr class="separator:a4861293363804d09cdb4a9cc6ffd09a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767dabda97227de25b69190776c76198" id="r_a767dabda97227de25b69190776c76198"><td class="memItemLeft" align="right" valign="top">async Task&lt; GridFSFileInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a767dabda97227de25b69190776c76198">GetFileInfoByVersionAsync</a> (string name, string owner, string type, string project, long version)</td></tr>
+<tr class="memdesc:a767dabda97227de25b69190776c76198"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить информацию о файле по версии.  <br /></td></tr>
+<tr class="separator:a767dabda97227de25b69190776c76198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45f629c1f8b30a5617bfd08cfcc35535" id="r_a45f629c1f8b30a5617bfd08cfcc35535"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; GridFSFileInfo &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45f629c1f8b30a5617bfd08cfcc35535">GetFileInfoAsync</a> (string name, string owner, string type, string project)</td></tr>
+<tr class="memdesc:a45f629c1f8b30a5617bfd08cfcc35535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить информацию о файле.  <br /></td></tr>
+<tr class="separator:a45f629c1f8b30a5617bfd08cfcc35535"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad686de01d60f91f292a091117278a54b" id="r_ad686de01d60f91f292a091117278a54b"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; GridFSFileInfo &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad686de01d60f91f292a091117278a54b">GetProjectFilesInfoAsync</a> (string owner, string project)</td></tr>
+<tr class="memdesc:ad686de01d60f91f292a091117278a54b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить информацию о всех файлах проекта.  <br /></td></tr>
+<tr class="separator:ad686de01d60f91f292a091117278a54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8f4134927d6d66d7cc8a1309b27699" id="r_a5a8f4134927d6d66d7cc8a1309b27699"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; GridFSFileInfo &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5a8f4134927d6d66d7cc8a1309b27699">GetAllFilesInfoAsync</a> (string owner)</td></tr>
+<tr class="memdesc:a5a8f4134927d6d66d7cc8a1309b27699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить информацию о всех файлах пользователя.  <br /></td></tr>
+<tr class="separator:a5a8f4134927d6d66d7cc8a1309b27699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cb49e2c0749df7ad5260dcdeb53daeb" id="r_a0cb49e2c0749df7ad5260dcdeb53daeb"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0cb49e2c0749df7ad5260dcdeb53daeb">UpdateFileInfoByVersionAsync</a> (string name, string owner, string type, string project, long version, BsonDocument updatedMetadata)</td></tr>
+<tr class="memdesc:a0cb49e2c0749df7ad5260dcdeb53daeb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить информацию о файле по версии.  <br /></td></tr>
+<tr class="separator:a0cb49e2c0749df7ad5260dcdeb53daeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0e8f8365d3f5d4cf0dd892504b0f360" id="r_ae0e8f8365d3f5d4cf0dd892504b0f360"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0e8f8365d3f5d4cf0dd892504b0f360">UpdateFileInfoAsync</a> (string name, string owner, string type, string project, BsonDocument updatedMetadata)</td></tr>
+<tr class="memdesc:ae0e8f8365d3f5d4cf0dd892504b0f360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить информацию о файле.  <br /></td></tr>
+<tr class="separator:ae0e8f8365d3f5d4cf0dd892504b0f360"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60e346524a6fca21f57dc5509dbdf57" id="r_ad60e346524a6fca21f57dc5509dbdf57"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad60e346524a6fca21f57dc5509dbdf57">UpdateFileInfoByProjectAsync</a> (string owner, string project, BsonDocument updatedMetadata)</td></tr>
+<tr class="memdesc:ad60e346524a6fca21f57dc5509dbdf57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить информацию о всех файлах в проекте.  <br /></td></tr>
+<tr class="separator:ad60e346524a6fca21f57dc5509dbdf57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26433050adf2f3288c3072fc0f3843a" id="r_af26433050adf2f3288c3072fc0f3843a"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af26433050adf2f3288c3072fc0f3843a">UpdateAllFilesInfoAsync</a> (string owner, BsonDocument updatedMetadata)</td></tr>
+<tr class="memdesc:af26433050adf2f3288c3072fc0f3843a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить информацию о всех файлах пользователя.  <br /></td></tr>
+<tr class="separator:af26433050adf2f3288c3072fc0f3843a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2a841928f43e49f787c5c9fe7f8aae2" id="r_ab2a841928f43e49f787c5c9fe7f8aae2"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2a841928f43e49f787c5c9fe7f8aae2">DeleteFileByVersionAsync</a> (string name, string owner, string type, string project, long version)</td></tr>
+<tr class="memdesc:ab2a841928f43e49f787c5c9fe7f8aae2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить файл по версии.  <br /></td></tr>
+<tr class="separator:ab2a841928f43e49f787c5c9fe7f8aae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d9e6aad3fc213bf0ea9f123ebccf9ce" id="r_a3d9e6aad3fc213bf0ea9f123ebccf9ce"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d9e6aad3fc213bf0ea9f123ebccf9ce">DeleteFileAsync</a> (string name, string owner, string type, string project)</td></tr>
+<tr class="memdesc:a3d9e6aad3fc213bf0ea9f123ebccf9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить файл.  <br /></td></tr>
+<tr class="separator:a3d9e6aad3fc213bf0ea9f123ebccf9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4674c86e8116bd3bda641bb5a3407ec2" id="r_a4674c86e8116bd3bda641bb5a3407ec2"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4674c86e8116bd3bda641bb5a3407ec2">DeleteProjectFilesAsync</a> (string owner, string project)</td></tr>
+<tr class="memdesc:a4674c86e8116bd3bda641bb5a3407ec2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить все файлы проекта.  <br /></td></tr>
+<tr class="separator:a4674c86e8116bd3bda641bb5a3407ec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b8bfb96319a77c5f277e81de666f917" id="r_a1b8bfb96319a77c5f277e81de666f917"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b8bfb96319a77c5f277e81de666f917">DeleteAllFilesAsync</a> (string owner)</td></tr>
+<tr class="memdesc:a1b8bfb96319a77c5f277e81de666f917"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить все файлы пользователя.  <br /></td></tr>
+<tr class="separator:a1b8bfb96319a77c5f277e81de666f917"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс сервиса для управления файлами. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a205db6ad0d850f487d6ba805705b6e48" name="a205db6ad0d850f487d6ba805705b6e48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205db6ad0d850f487d6ba805705b6e48">&#9670;&#160;</a></span>FileService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AmazingFileVersionControl.Core.Services.FileService.FileService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository.html">IFileRepository</a></td>          <td class="paramname"><span class="paramname"><em>fileRepository</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service.html" title="Класс сервиса для управления файлами.">FileService</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileRepository</td><td>Репозиторий файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a1b8bfb96319a77c5f277e81de666f917" name="a1b8bfb96319a77c5f277e81de666f917"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b8bfb96319a77c5f277e81de666f917">&#9670;&#160;</a></span>DeleteAllFilesAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.DeleteAllFilesAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить все файлы пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>Владелец файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a11418478c9a16c9f05ff21082eb1e9fc">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a3d9e6aad3fc213bf0ea9f123ebccf9ce" name="a3d9e6aad3fc213bf0ea9f123ebccf9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9e6aad3fc213bf0ea9f123ebccf9ce">&#9670;&#160;</a></span>DeleteFileAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.DeleteFileAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить файл. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a794196577269947a1960d549e953935b">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="ab2a841928f43e49f787c5c9fe7f8aae2" name="ab2a841928f43e49f787c5c9fe7f8aae2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2a841928f43e49f787c5c9fe7f8aae2">&#9670;&#160;</a></span>DeleteFileByVersionAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.DeleteFileByVersionAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>version</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить файл по версии. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+    <tr><td class="paramname">version</td><td>Версия файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#aef69724caa44295baeb48cede3d09e3b">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a4674c86e8116bd3bda641bb5a3407ec2" name="a4674c86e8116bd3bda641bb5a3407ec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4674c86e8116bd3bda641bb5a3407ec2">&#9670;&#160;</a></span>DeleteProjectFilesAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.DeleteProjectFilesAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить все файлы проекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>Владелец файлов. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относятся файлы. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a578ed81e9f9ff2c71fa611105df48add">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a4861293363804d09cdb4a9cc6ffd09a0" name="a4861293363804d09cdb4a9cc6ffd09a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4861293363804d09cdb4a9cc6ffd09a0">&#9670;&#160;</a></span>DownloadFileWithMetadataAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt;(Stream, GridFSFileInfo)&gt; AmazingFileVersionControl.Core.Services.FileService.DownloadFileWithMetadataAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long?</td>          <td class="paramname"><span class="paramname"><em>version</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Скачать файл с метаданными. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+    <tr><td class="paramname">version</td><td>Версия файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Поток данных файла и информация о файле. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#ad69f90ed17639786b4e891c60522c673">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a5a8f4134927d6d66d7cc8a1309b27699" name="a5a8f4134927d6d66d7cc8a1309b27699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8f4134927d6d66d7cc8a1309b27699">&#9670;&#160;</a></span>GetAllFilesInfoAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; GridFSFileInfo &gt; &gt; AmazingFileVersionControl.Core.Services.FileService.GetAllFilesInfoAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить информацию о всех файлах пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>Владелец файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список информации о файлах. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a924f9bcec86bcb89c391eaf56da1832e">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a45f629c1f8b30a5617bfd08cfcc35535" name="a45f629c1f8b30a5617bfd08cfcc35535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45f629c1f8b30a5617bfd08cfcc35535">&#9670;&#160;</a></span>GetFileInfoAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; GridFSFileInfo &gt; &gt; AmazingFileVersionControl.Core.Services.FileService.GetFileInfoAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить информацию о файле. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список информации о файлах. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#af7e4fc266c8f641d1e4dc42bc40a5ead">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a767dabda97227de25b69190776c76198" name="a767dabda97227de25b69190776c76198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767dabda97227de25b69190776c76198">&#9670;&#160;</a></span>GetFileInfoByVersionAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; GridFSFileInfo &gt; AmazingFileVersionControl.Core.Services.FileService.GetFileInfoByVersionAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>version</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить информацию о файле по версии. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+    <tr><td class="paramname">version</td><td>Версия файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Информация о файле. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a57fa889e6e6f14f05cb9a4019b8cbc03">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="ad686de01d60f91f292a091117278a54b" name="ad686de01d60f91f292a091117278a54b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad686de01d60f91f292a091117278a54b">&#9670;&#160;</a></span>GetProjectFilesInfoAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; GridFSFileInfo &gt; &gt; AmazingFileVersionControl.Core.Services.FileService.GetProjectFilesInfoAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить информацию о всех файлах проекта. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>Владелец файлов. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относятся файлы. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список информации о файлах. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a79743e2f4700547635b4fe3d5d679f00">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="af26433050adf2f3288c3072fc0f3843a" name="af26433050adf2f3288c3072fc0f3843a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26433050adf2f3288c3072fc0f3843a">&#9670;&#160;</a></span>UpdateAllFilesInfoAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.UpdateAllFilesInfoAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>updatedMetadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить информацию о всех файлах пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>Владелец файлов. </td></tr>
+    <tr><td class="paramname">updatedMetadata</td><td>Обновленные метаданные файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a71791e7359cb9c7764345a0210a4e212">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="ae0e8f8365d3f5d4cf0dd892504b0f360" name="ae0e8f8365d3f5d4cf0dd892504b0f360"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e8f8365d3f5d4cf0dd892504b0f360">&#9670;&#160;</a></span>UpdateFileInfoAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.UpdateFileInfoAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>updatedMetadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить информацию о файле. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+    <tr><td class="paramname">updatedMetadata</td><td>Обновленные метаданные файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a1adbb32c6aaa5a04a5da7c9e75a997d4">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="ad60e346524a6fca21f57dc5509dbdf57" name="ad60e346524a6fca21f57dc5509dbdf57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60e346524a6fca21f57dc5509dbdf57">&#9670;&#160;</a></span>UpdateFileInfoByProjectAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.UpdateFileInfoByProjectAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>updatedMetadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить информацию о всех файлах в проекте. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">owner</td><td>Владелец файлов. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относятся файлы. </td></tr>
+    <tr><td class="paramname">updatedMetadata</td><td>Обновленные метаданные файлов. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#ad0ad57aeee60871694bea9836dc689b2">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="a0cb49e2c0749df7ad5260dcdeb53daeb" name="a0cb49e2c0749df7ad5260dcdeb53daeb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cb49e2c0749df7ad5260dcdeb53daeb">&#9670;&#160;</a></span>UpdateFileInfoByVersionAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Services.FileService.UpdateFileInfoByVersionAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long</td>          <td class="paramname"><span class="paramname"><em>version</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">BsonDocument</td>          <td class="paramname"><span class="paramname"><em>updatedMetadata</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить информацию о файле по версии. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+    <tr><td class="paramname">version</td><td>Версия файла. </td></tr>
+    <tr><td class="paramname">updatedMetadata</td><td>Обновленные метаданные файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#a14156512e09ab34fdf576f805a949a2a">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<a id="ab21c83e0d9dedb5cbbc4e42d3c1fd8b3" name="ab21c83e0d9dedb5cbbc4e42d3c1fd8b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab21c83e0d9dedb5cbbc4e42d3c1fd8b3">&#9670;&#160;</a></span>UploadFileAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; ObjectId &gt; AmazingFileVersionControl.Core.Services.FileService.UploadFileAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>name</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>owner</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>type</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>project</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Stream</td>          <td class="paramname"><span class="paramname"><em>stream</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string?</td>          <td class="paramname"><span class="paramname"><em>description</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">long?</td>          <td class="paramname"><span class="paramname"><em>version</em></span><span class="paramdefsep"> = </span><span class="paramdefval">null</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Загрузить файл. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Имя файла. </td></tr>
+    <tr><td class="paramname">owner</td><td>Владелец файла. </td></tr>
+    <tr><td class="paramname">type</td><td>Тип файла. </td></tr>
+    <tr><td class="paramname">project</td><td>Проект, к которому относится файл. </td></tr>
+    <tr><td class="paramname">stream</td><td>Поток данных файла. </td></tr>
+    <tr><td class="paramname">description</td><td>Описание файла. </td></tr>
+    <tr><td class="paramname">version</td><td>Версия файла. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Идентификатор загруженного файла. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service.html#ac3f09af1862af2b0c1e0a8c3b1ee0d29">AmazingFileVersionControl.Core.Services.IFileService</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Services/<a class="el" href="_file_service_8cs.html">FileService.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

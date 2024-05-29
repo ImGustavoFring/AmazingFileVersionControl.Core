@@ -1,0 +1,255 @@
+\doxysection{Интерфейс Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service}
+\hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service}{}\label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+
+
+Интерфейс сервиса для управления пользователями.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a6f2b8d33c28541f627ab287ef1716f96}{Change\+Email}} (string user\+Id, string new\+Email)
+\begin{DoxyCompactList}\small\item\em Изменить электронную почту пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a551a97c9ae843e7064edafdb288b5170}{Change\+Login}} (string user\+Id, string new\+Login)
+\begin{DoxyCompactList}\small\item\em Изменить логин пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_aeca303dbfcfb873e815c12e3bf197595}{Change\+Password}} (string user\+Id, string new\+Password)
+\begin{DoxyCompactList}\small\item\em Изменить пароль пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a952e126620dce211d06cb73e393051d9}{Change\+Role}} (string user\+Id, \mbox{\hyperlink{namespace_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_a6f7b8e859f1a1c62ae9f8687c3419042}{Role\+In\+System}} new\+Role)
+\begin{DoxyCompactList}\small\item\em Изменить роль пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a8921147e372f167966aa036c1c08c40f}{Delete\+By\+Id}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Удалить пользователя по идентификатору. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a6171c0e7b47626d09e304bea411644a0}{Get\+All}} ()
+\begin{DoxyCompactList}\small\item\em Получить список всех пользователей. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_ac9d79b3144aa4579886d9c5d7a9ede9f}{Get\+All\+By\+Email\+Substring}} (string email\+Substring)
+\begin{DoxyCompactList}\small\item\em Получить список пользователей по подстроке электронной почты. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a0476c8e7890954a4233a72eca9fcdffe}{Get\+All\+By\+Login\+Substring}} (string login\+Substring)
+\begin{DoxyCompactList}\small\item\em Получить список пользователей по подстроке логина. \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_acac81f9f2e47e169ec834d6259a732f7}{Get\+By\+Id}} (string user\+Id)
+\begin{DoxyCompactList}\small\item\em Получить пользователя по идентификатору. \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a10abcc471a311cf45c6c8f11b5735b1a}{Get\+By\+Login}} (string user\+Login)
+\begin{DoxyCompactList}\small\item\em Получить пользователя по логину. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс сервиса для управления пользователями. 
+
+\doxysubsection{Методы}
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a6f2b8d33c28541f627ab287ef1716f96}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!ChangeEmail@{ChangeEmail}}
+\index{ChangeEmail@{ChangeEmail}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{ChangeEmail()}{ChangeEmail()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a6f2b8d33c28541f627ab287ef1716f96} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Change\+Email (\begin{DoxyParamCaption}\item[{string}]{user\+Id}{, }\item[{string}]{new\+Email}{}\end{DoxyParamCaption})}
+
+
+
+Изменить электронную почту пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+{\em new\+Email} & Новая электронная почта пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a52a053583a7ac82e62d61b44c9048cb4}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a551a97c9ae843e7064edafdb288b5170}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!ChangeLogin@{ChangeLogin}}
+\index{ChangeLogin@{ChangeLogin}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{ChangeLogin()}{ChangeLogin()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a551a97c9ae843e7064edafdb288b5170} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Change\+Login (\begin{DoxyParamCaption}\item[{string}]{user\+Id}{, }\item[{string}]{new\+Login}{}\end{DoxyParamCaption})}
+
+
+
+Изменить логин пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+{\em new\+Login} & Новый логин пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a566e96ec1380408e1e8edaa6b48e7947}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_aeca303dbfcfb873e815c12e3bf197595}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!ChangePassword@{ChangePassword}}
+\index{ChangePassword@{ChangePassword}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{ChangePassword()}{ChangePassword()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_aeca303dbfcfb873e815c12e3bf197595} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Change\+Password (\begin{DoxyParamCaption}\item[{string}]{user\+Id}{, }\item[{string}]{new\+Password}{}\end{DoxyParamCaption})}
+
+
+
+Изменить пароль пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+{\em new\+Password} & Новый пароль пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a4a3a0c7c8cebed474ec0eccfdf3d2f85}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a952e126620dce211d06cb73e393051d9}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!ChangeRole@{ChangeRole}}
+\index{ChangeRole@{ChangeRole}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{ChangeRole()}{ChangeRole()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a952e126620dce211d06cb73e393051d9} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Change\+Role (\begin{DoxyParamCaption}\item[{string}]{user\+Id}{, }\item[{\mbox{\hyperlink{namespace_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_a6f7b8e859f1a1c62ae9f8687c3419042}{Role\+In\+System}}}]{new\+Role}{}\end{DoxyParamCaption})}
+
+
+
+Изменить роль пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+{\em new\+Role} & Новая роль пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a46430f5f7890d38cd5526ad3ed223f57}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a8921147e372f167966aa036c1c08c40f}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!DeleteById@{DeleteById}}
+\index{DeleteById@{DeleteById}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{DeleteById()}{DeleteById()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a8921147e372f167966aa036c1c08c40f} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Delete\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Удалить пользователя по идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a4a1fb7d5b212b7def251841e643862da}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a6171c0e7b47626d09e304bea411644a0}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!GetAll@{GetAll}}
+\index{GetAll@{GetAll}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{GetAll()}{GetAll()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a6171c0e7b47626d09e304bea411644a0} 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Get\+All (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Получить список всех пользователей. 
+
+\begin{DoxyReturn}{Возвращает}
+Список всех пользователей. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_ab68890da997fd06f5c80a2a34c242cdc}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_ac9d79b3144aa4579886d9c5d7a9ede9f}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!GetAllByEmailSubstring@{GetAllByEmailSubstring}}
+\index{GetAllByEmailSubstring@{GetAllByEmailSubstring}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{GetAllByEmailSubstring()}{GetAllByEmailSubstring()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_ac9d79b3144aa4579886d9c5d7a9ede9f} 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Get\+All\+By\+Email\+Substring (\begin{DoxyParamCaption}\item[{string}]{email\+Substring}{}\end{DoxyParamCaption})}
+
+
+
+Получить список пользователей по подстроке электронной почты. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em email\+Substring} & Подстрока электронной почты. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список найденных пользователей. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a720af3cb3fabd19a1ecbf21198ae88e3}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a0476c8e7890954a4233a72eca9fcdffe}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!GetAllByLoginSubstring@{GetAllByLoginSubstring}}
+\index{GetAllByLoginSubstring@{GetAllByLoginSubstring}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{GetAllByLoginSubstring()}{GetAllByLoginSubstring()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a0476c8e7890954a4233a72eca9fcdffe} 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Get\+All\+By\+Login\+Substring (\begin{DoxyParamCaption}\item[{string}]{login\+Substring}{}\end{DoxyParamCaption})}
+
+
+
+Получить список пользователей по подстроке логина. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login\+Substring} & Подстрока логина. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список найденных пользователей. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_afbb235ccbe7f29fdfd4775cf90109d32}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_acac81f9f2e47e169ec834d6259a732f7}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!GetById@{GetById}}
+\index{GetById@{GetById}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{GetById()}{GetById()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_acac81f9f2e47e169ec834d6259a732f7} 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Get\+By\+Id (\begin{DoxyParamCaption}\item[{string}]{user\+Id}{}\end{DoxyParamCaption})}
+
+
+
+Получить пользователя по идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Id} & Идентификатор пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденный пользователь. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_aef28df6945c6b3144dce25a7cb5b4f21}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a10abcc471a311cf45c6c8f11b5735b1a}\index{AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}!GetByLogin@{GetByLogin}}
+\index{GetByLogin@{GetByLogin}!AmazingFileVersionControl.Core.Services.IUserService@{AmazingFileVersionControl.Core.Services.IUserService}}
+\doxysubsubsection{\texorpdfstring{GetByLogin()}{GetByLogin()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_user_service_a10abcc471a311cf45c6c8f11b5735b1a} 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity}{User\+Entity}} $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IUser\+Service.\+Get\+By\+Login (\begin{DoxyParamCaption}\item[{string}]{user\+Login}{}\end{DoxyParamCaption})}
+
+
+
+Получить пользователя по логину. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Login} & Логин пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденный пользователь. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_user_service_a341d6b422ad5ea37e3adb907576596b4}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+User\+Service}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Services/\mbox{\hyperlink{_i_user_service_8cs}{IUser\+Service.\+cs}}\end{DoxyCompactItemize}

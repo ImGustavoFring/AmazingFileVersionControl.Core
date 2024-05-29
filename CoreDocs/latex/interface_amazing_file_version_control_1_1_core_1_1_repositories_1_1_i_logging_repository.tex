@@ -1,0 +1,138 @@
+\doxysection{Интерфейс Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository}
+\hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository}{}\label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository}\index{AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}}
+
+
+Интерфейс репозитория для управления логами.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a26c2f77cf864fe88583e1365ebfecc9a}{Delete\+Log\+Async}} (Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ filter)
+\begin{DoxyCompactList}\small\item\em Удалить лог по фильтру. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a9aef78cb35b452125a488737942fc2af}{Delete\+Logs\+Async}} (Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ filter=null)
+\begin{DoxyCompactList}\small\item\em Удалить несколько логов по фильтру. \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a329f64154148e2c2e51dfe692e73383e}{Get\+Log\+Async}} (Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ filter)
+\begin{DoxyCompactList}\small\item\em Получить лог по фильтру. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_ad61113724b4f80c88bda8d67fc49a74a}{Get\+Logs\+Async}} (Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ filter=null)
+\begin{DoxyCompactList}\small\item\em Получить список логов по фильтру. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a3c7a585c5a47a6c9c198322a823fce41}{Insert\+Log\+Async}} (\mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} log\+Entry)
+\begin{DoxyCompactList}\small\item\em Вставить запись лога в базу данных. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс репозитория для управления логами. 
+
+\doxysubsection{Методы}
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a26c2f77cf864fe88583e1365ebfecc9a}\index{AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}!DeleteLogAsync@{DeleteLogAsync}}
+\index{DeleteLogAsync@{DeleteLogAsync}!AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteLogAsync()}{DeleteLogAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a26c2f77cf864fe88583e1365ebfecc9a} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository.\+Delete\+Log\+Async (\begin{DoxyParamCaption}\item[{Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$}]{filter}{}\end{DoxyParamCaption})}
+
+
+
+Удалить лог по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска лога. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository_afa0821329e0590ec843147d85c09f490}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+Logging\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a9aef78cb35b452125a488737942fc2af}\index{AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}!DeleteLogsAsync@{DeleteLogsAsync}}
+\index{DeleteLogsAsync@{DeleteLogsAsync}!AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteLogsAsync()}{DeleteLogsAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a9aef78cb35b452125a488737942fc2af} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository.\+Delete\+Logs\+Async (\begin{DoxyParamCaption}\item[{Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$}]{filter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Удалить несколько логов по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска логов. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository_a25fddede04da69566e8b769ce2fac66b}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+Logging\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a329f64154148e2c2e51dfe692e73383e}\index{AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}!GetLogAsync@{GetLogAsync}}
+\index{GetLogAsync@{GetLogAsync}!AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}}
+\doxysubsubsection{\texorpdfstring{GetLogAsync()}{GetLogAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a329f64154148e2c2e51dfe692e73383e} 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository.\+Get\+Log\+Async (\begin{DoxyParamCaption}\item[{Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$}]{filter}{}\end{DoxyParamCaption})}
+
+
+
+Получить лог по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска лога. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденная запись лога. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository_a157b30a5ab874ed05b4ebfa6bfb3b235}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+Logging\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_ad61113724b4f80c88bda8d67fc49a74a}\index{AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}!GetLogsAsync@{GetLogsAsync}}
+\index{GetLogsAsync@{GetLogsAsync}!AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}}
+\doxysubsubsection{\texorpdfstring{GetLogsAsync()}{GetLogsAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_ad61113724b4f80c88bda8d67fc49a74a} 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository.\+Get\+Logs\+Async (\begin{DoxyParamCaption}\item[{Filter\+Definition$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$}]{filter}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Получить список логов по фильтру. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em filter} & Фильтр для поиска логов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список найденных логов. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository_a34d3357f7380d6982567315e728f340a}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+Logging\+Repository}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a3c7a585c5a47a6c9c198322a823fce41}\index{AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}!InsertLogAsync@{InsertLogAsync}}
+\index{InsertLogAsync@{InsertLogAsync}!AmazingFileVersionControl.Core.Repositories.ILoggingRepository@{AmazingFileVersionControl.Core.Repositories.ILoggingRepository}}
+\doxysubsubsection{\texorpdfstring{InsertLogAsync()}{InsertLogAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_logging_repository_a3c7a585c5a47a6c9c198322a823fce41} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+ILogging\+Repository.\+Insert\+Log\+Async (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}}}]{log\+Entry}{}\end{DoxyParamCaption})}
+
+
+
+Вставить запись лога в базу данных. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em log\+Entry} & Запись лога. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_logging_repository_a5d1ad41eae388d6f30e5ebbf5d12691b}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+Logging\+Repository}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\mbox{\hyperlink{_i_logging_repository_8cs}{ILogging\+Repository.\+cs}}\end{DoxyCompactItemize}

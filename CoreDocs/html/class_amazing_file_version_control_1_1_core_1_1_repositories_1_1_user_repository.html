@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AmazingFileVersionControl.Core: Класс AmazingFileVersionControl.Core.Repositories.UserRepository</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AmazingFileVersionControl.Core
+   </div>
+   <div id="projectbrief">Business Logic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_amazing_file_version_control.html">AmazingFileVersionControl</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_repositories.html">Repositories</a></li><li class="navelem"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository.html">UserRepository</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс AmazingFileVersionControl.Core.Repositories.UserRepository</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс репозитория для управления пользователями.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:AmazingFileVersionControl.Core.Repositories.UserRepository:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository.png" usemap="#AmazingFileVersionControl.Core.Repositories.UserRepository_map" alt=""/>
+  <map id="AmazingFileVersionControl.Core.Repositories.UserRepository_map" name="AmazingFileVersionControl.Core.Repositories.UserRepository_map">
+<area href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html" title="Интерфейс репозитория для управления пользователями." alt="AmazingFileVersionControl.Core.Repositories.IUserRepository" shape="rect" coords="0,0,364,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a9627a0b0423bb9146250dab59fdf3491" id="r_a9627a0b0423bb9146250dab59fdf3491"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9627a0b0423bb9146250dab59fdf3491">UserRepository</a> (<a class="el" href="class_amazing_file_version_control_1_1_core_1_1_contexts_1_1_user_db_context.html">UserDbContext</a> context)</td></tr>
+<tr class="memdesc:a9627a0b0423bb9146250dab59fdf3491"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository.html" title="Класс репозитория для управления пользователями.">UserRepository</a>.  <br /></td></tr>
+<tr class="separator:a9627a0b0423bb9146250dab59fdf3491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743a0af75bd0c7dcf44f954e567aeea8" id="r_a743a0af75bd0c7dcf44f954e567aeea8"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a743a0af75bd0c7dcf44f954e567aeea8">AddAsync</a> (<a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> user)</td></tr>
+<tr class="memdesc:a743a0af75bd0c7dcf44f954e567aeea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавить нового пользователя.  <br /></td></tr>
+<tr class="separator:a743a0af75bd0c7dcf44f954e567aeea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f93e2c079e40ebb369c91e114dc4dc" id="r_a67f93e2c079e40ebb369c91e114dc4dc"><td class="memItemLeft" align="right" valign="top">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67f93e2c079e40ebb369c91e114dc4dc">GetOneByFilterAsync</a> (Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt; filter)</td></tr>
+<tr class="memdesc:a67f93e2c079e40ebb369c91e114dc4dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить пользователя по фильтру.  <br /></td></tr>
+<tr class="separator:a67f93e2c079e40ebb369c91e114dc4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d4dbf8f7691d80d5e061f7435d64b54" id="r_a0d4dbf8f7691d80d5e061f7435d64b54"><td class="memItemLeft" align="right" valign="top">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d4dbf8f7691d80d5e061f7435d64b54">GetManyByFilterAsync</a> (Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt; filter)</td></tr>
+<tr class="memdesc:a0d4dbf8f7691d80d5e061f7435d64b54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить список пользователей по фильтру.  <br /></td></tr>
+<tr class="separator:a0d4dbf8f7691d80d5e061f7435d64b54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab266170bf2c2a600c2a6a317deb30d6d" id="r_ab266170bf2c2a600c2a6a317deb30d6d"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab266170bf2c2a600c2a6a317deb30d6d">UpdateOneByFilterAsync</a> (Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt; filter, Action&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; updateAction)</td></tr>
+<tr class="memdesc:ab266170bf2c2a600c2a6a317deb30d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить пользователя по фильтру.  <br /></td></tr>
+<tr class="separator:ab266170bf2c2a600c2a6a317deb30d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada9da58802e7f509ae2cce4ec1d088bd" id="r_ada9da58802e7f509ae2cce4ec1d088bd"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada9da58802e7f509ae2cce4ec1d088bd">UpdateManyByFilterAsync</a> (Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt; filter, Action&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; updateAction)</td></tr>
+<tr class="memdesc:ada9da58802e7f509ae2cce4ec1d088bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обновить список пользователей по фильтру.  <br /></td></tr>
+<tr class="separator:ada9da58802e7f509ae2cce4ec1d088bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349a3ae1b7c060936c6fb78b48ae20d8" id="r_a349a3ae1b7c060936c6fb78b48ae20d8"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a349a3ae1b7c060936c6fb78b48ae20d8">DeleteOneByFilterAsync</a> (Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt; filter)</td></tr>
+<tr class="memdesc:a349a3ae1b7c060936c6fb78b48ae20d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить пользователя по фильтру.  <br /></td></tr>
+<tr class="separator:a349a3ae1b7c060936c6fb78b48ae20d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa427d8becb0eaaa5cf0d9ed2c765b0b9" id="r_aa427d8becb0eaaa5cf0d9ed2c765b0b9"><td class="memItemLeft" align="right" valign="top">async Task&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa427d8becb0eaaa5cf0d9ed2c765b0b9">DeleteManyByFilterAsync</a> (Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt; filter)</td></tr>
+<tr class="memdesc:aa427d8becb0eaaa5cf0d9ed2c765b0b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удалить список пользователей по фильтру.  <br /></td></tr>
+<tr class="separator:aa427d8becb0eaaa5cf0d9ed2c765b0b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс репозитория для управления пользователями. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a9627a0b0423bb9146250dab59fdf3491" name="a9627a0b0423bb9146250dab59fdf3491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9627a0b0423bb9146250dab59fdf3491">&#9670;&#160;</a></span>UserRepository()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AmazingFileVersionControl.Core.Repositories.UserRepository.UserRepository </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_contexts_1_1_user_db_context.html">UserDbContext</a></td>          <td class="paramname"><span class="paramname"><em>context</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_user_repository.html" title="Класс репозитория для управления пользователями.">UserRepository</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">context</td><td>Контекст базы данных пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a743a0af75bd0c7dcf44f954e567aeea8" name="a743a0af75bd0c7dcf44f954e567aeea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a743a0af75bd0c7dcf44f954e567aeea8">&#9670;&#160;</a></span>AddAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.UserRepository.AddAsync </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a></td>          <td class="paramname"><span class="paramname"><em>user</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Добавить нового пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">user</td><td>Пользователь для добавления. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#aa304e8b5837bedcc54d348c8a16fdd4c">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<a id="aa427d8becb0eaaa5cf0d9ed2c765b0b9" name="aa427d8becb0eaaa5cf0d9ed2c765b0b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa427d8becb0eaaa5cf0d9ed2c765b0b9">&#9670;&#160;</a></span>DeleteManyByFilterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.UserRepository.DeleteManyByFilterAsync </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить список пользователей по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#a1a8266fd3ba810a69f1e786c4cdcee17">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<a id="a349a3ae1b7c060936c6fb78b48ae20d8" name="a349a3ae1b7c060936c6fb78b48ae20d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a349a3ae1b7c060936c6fb78b48ae20d8">&#9670;&#160;</a></span>DeleteOneByFilterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.UserRepository.DeleteOneByFilterAsync </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Удалить пользователя по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#ac176452838fdb6cf73b271ab1b1107d2">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<a id="a0d4dbf8f7691d80d5e061f7435d64b54" name="a0d4dbf8f7691d80d5e061f7435d64b54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d4dbf8f7691d80d5e061f7435d64b54">&#9670;&#160;</a></span>GetManyByFilterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; List&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; &gt; AmazingFileVersionControl.Core.Repositories.UserRepository.GetManyByFilterAsync </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить список пользователей по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Список найденных пользователей. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#a8fed7254971686c9fb38ee58f9f0e4e4">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<a id="a67f93e2c079e40ebb369c91e114dc4dc" name="a67f93e2c079e40ebb369c91e114dc4dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f93e2c079e40ebb369c91e114dc4dc">&#9670;&#160;</a></span>GetOneByFilterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt; AmazingFileVersionControl.Core.Repositories.UserRepository.GetOneByFilterAsync </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получить пользователя по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Найденный пользователь. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#a97694550da0c555120f6d930e634df54">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<a id="ada9da58802e7f509ae2cce4ec1d088bd" name="ada9da58802e7f509ae2cce4ec1d088bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada9da58802e7f509ae2cce4ec1d088bd">&#9670;&#160;</a></span>UpdateManyByFilterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.UserRepository.UpdateManyByFilterAsync </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>updateAction</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить список пользователей по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователей. </td></tr>
+    <tr><td class="paramname">updateAction</td><td>Действие обновления пользователей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#ab06467f0136658779a41c93b4e374ea9">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<a id="ab266170bf2c2a600c2a6a317deb30d6d" name="ab266170bf2c2a600c2a6a317deb30d6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab266170bf2c2a600c2a6a317deb30d6d">&#9670;&#160;</a></span>UpdateOneByFilterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task AmazingFileVersionControl.Core.Repositories.UserRepository.UpdateOneByFilterAsync </td>
+          <td>(</td>
+          <td class="paramtype">Expression&lt; Func&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a>, bool &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>filter</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Action&lt; <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html">UserEntity</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>updateAction</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обновить пользователя по фильтру. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filter</td><td>Фильтр для поиска пользователя. </td></tr>
+    <tr><td class="paramname">updateAction</td><td>Действие обновления пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html#a87b61ad121de5654a49281187e0685d3">AmazingFileVersionControl.Core.Repositories.IUserRepository</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Repositories/<a class="el" href="_user_repository_8cs.html">UserRepository.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

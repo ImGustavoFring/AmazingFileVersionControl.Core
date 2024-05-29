@@ -1,0 +1,105 @@
+\doxysection{Класс Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service}
+\hypertarget{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service}{}\label{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service}\index{AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}}
+
+
+Класс сервиса для аутентификации и регистрации пользователей.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_ae121bfeea73892f05ebbb2b3089ea773}{Auth\+Service}} (\mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository}{IUser\+Repository}} user\+Repository, \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_jwt_generator}{IJwt\+Generator}} jwt\+Generator, \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher}{IPassword\+Hasher}} password\+Hasher)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service}{Auth\+Service}. \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a98620d31bcbe00fadf77847412e66b1c}{Register\+Async}} (string login, string email, string password)
+\begin{DoxyCompactList}\small\item\em Регистрация нового пользователя. \end{DoxyCompactList}\item 
+async Task$<$ string $>$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a9dae57d0be8ec3252b855ee35bbbf484}{Login\+Async}} (string login, string password)
+\begin{DoxyCompactList}\small\item\em Вход пользователя в систему. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс сервиса для аутентификации и регистрации пользователей. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_ae121bfeea73892f05ebbb2b3089ea773}\index{AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}!AuthService@{AuthService}}
+\index{AuthService@{AuthService}!AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}}
+\doxysubsubsection{\texorpdfstring{AuthService()}{AuthService()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_ae121bfeea73892f05ebbb2b3089ea773} 
+Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service.\+Auth\+Service (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository}{IUser\+Repository}}}]{user\+Repository}{, }\item[{\mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_jwt_generator}{IJwt\+Generator}}}]{jwt\+Generator}{, }\item[{\mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher}{IPassword\+Hasher}}}]{password\+Hasher}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service}{Auth\+Service}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em user\+Repository} & Репозиторий пользователей. \\
+\hline
+{\em jwt\+Generator} & Генератор JWT. \\
+\hline
+{\em password\+Hasher} & Хэшер паролей. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a9dae57d0be8ec3252b855ee35bbbf484}\index{AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}!LoginAsync@{LoginAsync}}
+\index{LoginAsync@{LoginAsync}!AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}}
+\doxysubsubsection{\texorpdfstring{LoginAsync()}{LoginAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a9dae57d0be8ec3252b855ee35bbbf484} 
+async Task$<$ string $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service.\+Login\+Async (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{string}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Вход пользователя в систему. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+JWT токен. 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_a7c9a8693dc623f721a3b8197c2450313}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+IAuth\+Service}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a98620d31bcbe00fadf77847412e66b1c}\index{AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}!RegisterAsync@{RegisterAsync}}
+\index{RegisterAsync@{RegisterAsync}!AmazingFileVersionControl.Core.Services.AuthService@{AmazingFileVersionControl.Core.Services.AuthService}}
+\doxysubsubsection{\texorpdfstring{RegisterAsync()}{RegisterAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a98620d31bcbe00fadf77847412e66b1c} 
+async Task$<$ string $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service.\+Register\+Async (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{string}]{email}{, }\item[{string}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Регистрация нового пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em email} & Электронная почта пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+JWT токен. 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_aeaa573698521401aa8c9f9ead1870157}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+IAuth\+Service}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Services/\mbox{\hyperlink{_auth_service_8cs}{Auth\+Service.\+cs}}\end{DoxyCompactItemize}

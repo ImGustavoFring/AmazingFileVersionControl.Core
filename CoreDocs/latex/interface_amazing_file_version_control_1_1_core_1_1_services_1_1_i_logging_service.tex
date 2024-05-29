@@ -1,0 +1,166 @@
+\doxysection{Интерфейс Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service}
+\hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service}{}\label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service}\index{AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}}
+
+
+Интерфейс сервиса для управления логами.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a37ec2bc2a8998033c364afcae8e69bab}{Delete\+Log\+By\+Id\+Async}} (string id)
+\begin{DoxyCompactList}\small\item\em Удалить лог по идентификатору. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a11034d7ae9ce568dac22ba9e8a85fa62}{Delete\+Logs\+Async}} (string controller=null, string action=null, Date\+Time? start\+Date=null, Date\+Time? end\+Date=null, string level=null, Bson\+Document additional\+Data=null)
+\begin{DoxyCompactList}\small\item\em Удалить несколько логов по фильтрам. \end{DoxyCompactList}\item 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a6fe5501aa18a949d72bf661100946aa8}{Get\+Log\+By\+Id\+Async}} (string id)
+\begin{DoxyCompactList}\small\item\em Получить лог по идентификатору. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a2516051c6d10fb4582ca10b126dd7836}{Get\+Logs\+Async}} (string controller=null, string action=null, Date\+Time? start\+Date=null, Date\+Time? end\+Date=null, string level=null, Bson\+Document additional\+Data=null)
+\begin{DoxyCompactList}\small\item\em Получить список логов по фильтрам. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_ac0d399f678c124eb8ac8ac3f52843a5d}{Log\+Async}} (string controller, string action, string message, string level="{}Info"{}, Bson\+Document additional\+Data=null)
+\begin{DoxyCompactList}\small\item\em Логирование события. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс сервиса для управления логами. 
+
+\doxysubsection{Методы}
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a37ec2bc2a8998033c364afcae8e69bab}\index{AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}!DeleteLogByIdAsync@{DeleteLogByIdAsync}}
+\index{DeleteLogByIdAsync@{DeleteLogByIdAsync}!AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}}
+\doxysubsubsection{\texorpdfstring{DeleteLogByIdAsync()}{DeleteLogByIdAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a37ec2bc2a8998033c364afcae8e69bab} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service.\+Delete\+Log\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Удалить лог по идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор лога. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_logging_service_aa0cf9a291ae47d8024264755b49416ac}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Logging\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a11034d7ae9ce568dac22ba9e8a85fa62}\index{AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}!DeleteLogsAsync@{DeleteLogsAsync}}
+\index{DeleteLogsAsync@{DeleteLogsAsync}!AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}}
+\doxysubsubsection{\texorpdfstring{DeleteLogsAsync()}{DeleteLogsAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a11034d7ae9ce568dac22ba9e8a85fa62} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service.\+Delete\+Logs\+Async (\begin{DoxyParamCaption}\item[{string}]{controller}{ = {\ttfamily null}, }\item[{string}]{action}{ = {\ttfamily null}, }\item[{Date\+Time?}]{start\+Date}{ = {\ttfamily null}, }\item[{Date\+Time?}]{end\+Date}{ = {\ttfamily null}, }\item[{string}]{level}{ = {\ttfamily null}, }\item[{Bson\+Document}]{additional\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Удалить несколько логов по фильтрам. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em controller} & Имя контроллера. \\
+\hline
+{\em action} & Имя действия. \\
+\hline
+{\em start\+Date} & Дата начала фильтрации. \\
+\hline
+{\em end\+Date} & Дата окончания фильтрации. \\
+\hline
+{\em level} & Уровень логирования. \\
+\hline
+{\em additional\+Data} & Дополнительные данные. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_logging_service_a3054c044d19fce78db7bcbd5980e5d5a}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Logging\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a6fe5501aa18a949d72bf661100946aa8}\index{AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}!GetLogByIdAsync@{GetLogByIdAsync}}
+\index{GetLogByIdAsync@{GetLogByIdAsync}!AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}}
+\doxysubsubsection{\texorpdfstring{GetLogByIdAsync()}{GetLogByIdAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a6fe5501aa18a949d72bf661100946aa8} 
+Task$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service.\+Get\+Log\+By\+Id\+Async (\begin{DoxyParamCaption}\item[{string}]{id}{}\end{DoxyParamCaption})}
+
+
+
+Получить лог по идентификатору. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em id} & Идентификатор лога. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Найденная запись лога. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_logging_service_af021462dfb17a6d01abc311b2f4add13}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Logging\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a2516051c6d10fb4582ca10b126dd7836}\index{AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}!GetLogsAsync@{GetLogsAsync}}
+\index{GetLogsAsync@{GetLogsAsync}!AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}}
+\doxysubsubsection{\texorpdfstring{GetLogsAsync()}{GetLogsAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_a2516051c6d10fb4582ca10b126dd7836} 
+Task$<$ List$<$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity}{Log\+Entity}} $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service.\+Get\+Logs\+Async (\begin{DoxyParamCaption}\item[{string}]{controller}{ = {\ttfamily null}, }\item[{string}]{action}{ = {\ttfamily null}, }\item[{Date\+Time?}]{start\+Date}{ = {\ttfamily null}, }\item[{Date\+Time?}]{end\+Date}{ = {\ttfamily null}, }\item[{string}]{level}{ = {\ttfamily null}, }\item[{Bson\+Document}]{additional\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Получить список логов по фильтрам. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em controller} & Имя контроллера. \\
+\hline
+{\em action} & Имя действия. \\
+\hline
+{\em start\+Date} & Дата начала фильтрации. \\
+\hline
+{\em end\+Date} & Дата окончания фильтрации. \\
+\hline
+{\em level} & Уровень логирования. \\
+\hline
+{\em additional\+Data} & Дополнительные данные. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список найденных логов. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_logging_service_a5efa9524a1bb4db54b9f4f9cead7d2fc}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Logging\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_ac0d399f678c124eb8ac8ac3f52843a5d}\index{AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}!LogAsync@{LogAsync}}
+\index{LogAsync@{LogAsync}!AmazingFileVersionControl.Core.Services.ILoggingService@{AmazingFileVersionControl.Core.Services.ILoggingService}}
+\doxysubsubsection{\texorpdfstring{LogAsync()}{LogAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_logging_service_ac0d399f678c124eb8ac8ac3f52843a5d} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+ILogging\+Service.\+Log\+Async (\begin{DoxyParamCaption}\item[{string}]{controller}{, }\item[{string}]{action}{, }\item[{string}]{message}{, }\item[{string}]{level}{ = {\ttfamily "{}Info"{}}, }\item[{Bson\+Document}]{additional\+Data}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Логирование события. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em controller} & Имя контроллера. \\
+\hline
+{\em action} & Имя действия. \\
+\hline
+{\em message} & Сообщение лога. \\
+\hline
+{\em level} & Уровень логирования. \\
+\hline
+{\em additional\+Data} & Дополнительные данные. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_logging_service_a8122a037e006633935af1e95a2770bea}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Logging\+Service}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Services/\mbox{\hyperlink{_i_logging_service_8cs}{ILogging\+Service.\+cs}}\end{DoxyCompactItemize}

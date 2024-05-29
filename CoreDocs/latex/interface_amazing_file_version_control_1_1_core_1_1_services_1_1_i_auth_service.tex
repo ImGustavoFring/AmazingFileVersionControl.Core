@@ -1,0 +1,81 @@
+\doxysection{Интерфейс Amazing\+File\+Version\+Control.\+Core.\+Services.\+IAuth\+Service}
+\hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service}{}\label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service}\index{AmazingFileVersionControl.Core.Services.IAuthService@{AmazingFileVersionControl.Core.Services.IAuthService}}
+
+
+Интерфейс сервиса для аутентификации и регистрации пользователей.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Services.\+IAuth\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ string $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_a7c9a8693dc623f721a3b8197c2450313}{Login\+Async}} (string login, string password)
+\begin{DoxyCompactList}\small\item\em Вход пользователя в систему. \end{DoxyCompactList}\item 
+Task$<$ string $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_aeaa573698521401aa8c9f9ead1870157}{Register\+Async}} (string login, string email, string password)
+\begin{DoxyCompactList}\small\item\em Регистрация нового пользователя. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс сервиса для аутентификации и регистрации пользователей. 
+
+\doxysubsection{Методы}
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_a7c9a8693dc623f721a3b8197c2450313}\index{AmazingFileVersionControl.Core.Services.IAuthService@{AmazingFileVersionControl.Core.Services.IAuthService}!LoginAsync@{LoginAsync}}
+\index{LoginAsync@{LoginAsync}!AmazingFileVersionControl.Core.Services.IAuthService@{AmazingFileVersionControl.Core.Services.IAuthService}}
+\doxysubsubsection{\texorpdfstring{LoginAsync()}{LoginAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_a7c9a8693dc623f721a3b8197c2450313} 
+Task$<$ string $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IAuth\+Service.\+Login\+Async (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{string}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Вход пользователя в систему. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+JWT токен. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a9dae57d0be8ec3252b855ee35bbbf484}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_aeaa573698521401aa8c9f9ead1870157}\index{AmazingFileVersionControl.Core.Services.IAuthService@{AmazingFileVersionControl.Core.Services.IAuthService}!RegisterAsync@{RegisterAsync}}
+\index{RegisterAsync@{RegisterAsync}!AmazingFileVersionControl.Core.Services.IAuthService@{AmazingFileVersionControl.Core.Services.IAuthService}}
+\doxysubsubsection{\texorpdfstring{RegisterAsync()}{RegisterAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service_aeaa573698521401aa8c9f9ead1870157} 
+Task$<$ string $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IAuth\+Service.\+Register\+Async (\begin{DoxyParamCaption}\item[{string}]{login}{, }\item[{string}]{email}{, }\item[{string}]{password}{}\end{DoxyParamCaption})}
+
+
+
+Регистрация нового пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em login} & Логин пользователя. \\
+\hline
+{\em email} & Электронная почта пользователя. \\
+\hline
+{\em password} & Пароль пользователя. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+JWT токен. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service_a98620d31bcbe00fadf77847412e66b1c}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+Auth\+Service}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Services/\mbox{\hyperlink{_i_auth_service_8cs}{IAuth\+Service.\+cs}}\end{DoxyCompactItemize}

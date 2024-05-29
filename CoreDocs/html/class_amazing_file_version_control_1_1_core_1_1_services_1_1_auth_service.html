@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.11.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AmazingFileVersionControl.Core: Класс AmazingFileVersionControl.Core.Services.AuthService</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">AmazingFileVersionControl.Core
+   </div>
+   <div id="projectbrief">Business Logic</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.11.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespace_amazing_file_version_control.html">AmazingFileVersionControl</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core.html">Core</a></li><li class="navelem"><a class="el" href="namespace_amazing_file_version_control_1_1_core_1_1_services.html">Services</a></li><li class="navelem"><a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service.html">AuthService</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс AmazingFileVersionControl.Core.Services.AuthService</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс сервиса для аутентификации и регистрации пользователей.  
+ <a href="#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф наследования:AmazingFileVersionControl.Core.Services.AuthService:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service.png" usemap="#AmazingFileVersionControl.Core.Services.AuthService_map" alt=""/>
+  <map id="AmazingFileVersionControl.Core.Services.AuthService_map" name="AmazingFileVersionControl.Core.Services.AuthService_map">
+<area href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service.html" title="Интерфейс сервиса для аутентификации и регистрации пользователей." alt="AmazingFileVersionControl.Core.Services.IAuthService" shape="rect" coords="0,0,329,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ae121bfeea73892f05ebbb2b3089ea773" id="r_ae121bfeea73892f05ebbb2b3089ea773"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae121bfeea73892f05ebbb2b3089ea773">AuthService</a> (<a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html">IUserRepository</a> userRepository, <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_jwt_generator.html">IJwtGenerator</a> jwtGenerator, <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher.html">IPasswordHasher</a> passwordHasher)</td></tr>
+<tr class="memdesc:ae121bfeea73892f05ebbb2b3089ea773"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service.html" title="Класс сервиса для аутентификации и регистрации пользователей.">AuthService</a>.  <br /></td></tr>
+<tr class="separator:ae121bfeea73892f05ebbb2b3089ea773"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98620d31bcbe00fadf77847412e66b1c" id="r_a98620d31bcbe00fadf77847412e66b1c"><td class="memItemLeft" align="right" valign="top">async Task&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98620d31bcbe00fadf77847412e66b1c">RegisterAsync</a> (string login, string email, string password)</td></tr>
+<tr class="memdesc:a98620d31bcbe00fadf77847412e66b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Регистрация нового пользователя.  <br /></td></tr>
+<tr class="separator:a98620d31bcbe00fadf77847412e66b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dae57d0be8ec3252b855ee35bbbf484" id="r_a9dae57d0be8ec3252b855ee35bbbf484"><td class="memItemLeft" align="right" valign="top">async Task&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9dae57d0be8ec3252b855ee35bbbf484">LoginAsync</a> (string login, string password)</td></tr>
+<tr class="memdesc:a9dae57d0be8ec3252b855ee35bbbf484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вход пользователя в систему.  <br /></td></tr>
+<tr class="separator:a9dae57d0be8ec3252b855ee35bbbf484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс сервиса для аутентификации и регистрации пользователей. </p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ae121bfeea73892f05ebbb2b3089ea773" name="ae121bfeea73892f05ebbb2b3089ea773"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae121bfeea73892f05ebbb2b3089ea773">&#9670;&#160;</a></span>AuthService()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">AmazingFileVersionControl.Core.Services.AuthService.AuthService </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_user_repository.html">IUserRepository</a></td>          <td class="paramname"><span class="paramname"><em>userRepository</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_jwt_generator.html">IJwtGenerator</a></td>          <td class="paramname"><span class="paramname"><em>jwtGenerator</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_infrastructure_1_1_i_password_hasher.html">IPasswordHasher</a></td>          <td class="paramname"><span class="paramname"><em>passwordHasher</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор класса <a class="el" href="class_amazing_file_version_control_1_1_core_1_1_services_1_1_auth_service.html" title="Класс сервиса для аутентификации и регистрации пользователей.">AuthService</a>. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">userRepository</td><td>Репозиторий пользователей. </td></tr>
+    <tr><td class="paramname">jwtGenerator</td><td>Генератор JWT. </td></tr>
+    <tr><td class="paramname">passwordHasher</td><td>Хэшер паролей. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="a9dae57d0be8ec3252b855ee35bbbf484" name="a9dae57d0be8ec3252b855ee35bbbf484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dae57d0be8ec3252b855ee35bbbf484">&#9670;&#160;</a></span>LoginAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; string &gt; AmazingFileVersionControl.Core.Services.AuthService.LoginAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вход пользователя в систему. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>JWT токен. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service.html#a7c9a8693dc623f721a3b8197c2450313">AmazingFileVersionControl.Core.Services.IAuthService</a>.</p>
+
+</div>
+</div>
+<a id="a98620d31bcbe00fadf77847412e66b1c" name="a98620d31bcbe00fadf77847412e66b1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98620d31bcbe00fadf77847412e66b1c">&#9670;&#160;</a></span>RegisterAsync()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">async Task&lt; string &gt; AmazingFileVersionControl.Core.Services.AuthService.RegisterAsync </td>
+          <td>(</td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>login</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>email</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string</td>          <td class="paramname"><span class="paramname"><em>password</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Регистрация нового пользователя. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">login</td><td>Логин пользователя. </td></tr>
+    <tr><td class="paramname">email</td><td>Электронная почта пользователя. </td></tr>
+    <tr><td class="paramname">password</td><td>Пароль пользователя. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>JWT токен. </dd></dl>
+
+<p>Замещает <a class="el" href="interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_auth_service.html#aeaa573698521401aa8c9f9ead1870157">AmazingFileVersionControl.Core.Services.IAuthService</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>Services/<a class="el" href="_auth_service_8cs.html">AuthService.cs</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

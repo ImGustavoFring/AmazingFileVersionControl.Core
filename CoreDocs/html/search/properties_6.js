@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['level_0',['Level',['../class_amazing_file_version_control_1_1_core_1_1_d_t_os_1_1_logging_d_t_os_1_1_log_filter_d_t_o.html#a16b6ed24304e49a70156cc31bdd2fcc5',1,'AmazingFileVersionControl.Core.DTOs.LoggingDTOs.LogFilterDTO.Level'],['../class_amazing_file_version_control_1_1_core_1_1_models_1_1_logging_entities_1_1_log_entity.html#a9209592248aab8ef8139ec973e39f254',1,'AmazingFileVersionControl.Core.Models.LoggingEntities.LogEntity.Level']]],
+  ['login_1',['Login',['../class_amazing_file_version_control_1_1_core_1_1_d_t_os_1_1_auth_d_t_os_1_1_login_d_t_o.html#abfc5bff5be948728655481bef6846593',1,'AmazingFileVersionControl.Core.DTOs.AuthDTOs.LoginDTO.Login'],['../class_amazing_file_version_control_1_1_core_1_1_d_t_os_1_1_auth_d_t_os_1_1_register_d_t_o.html#a9d27f46c47f6ae33ea7b543a283204f9',1,'AmazingFileVersionControl.Core.DTOs.AuthDTOs.RegisterDTO.Login'],['../class_amazing_file_version_control_1_1_core_1_1_models_1_1_user_db_entities_1_1_user_entity.html#ab6a1f3615124a4648a566ff634d272f6',1,'AmazingFileVersionControl.Core.Models.UserDbEntities.UserEntity.Login']]]
+];

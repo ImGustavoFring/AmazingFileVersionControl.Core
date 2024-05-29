@@ -1,0 +1,415 @@
+\doxysection{Интерфейс Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service}
+\hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service}{}\label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+
+
+Интерфейс сервиса для управления файлами.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a11418478c9a16c9f05ff21082eb1e9fc}{Delete\+All\+Files\+Async}} (string owner)
+\begin{DoxyCompactList}\small\item\em Удалить все файлы пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a794196577269947a1960d549e953935b}{Delete\+File\+Async}} (string name, string owner, string type, string project)
+\begin{DoxyCompactList}\small\item\em Удалить файл. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_aef69724caa44295baeb48cede3d09e3b}{Delete\+File\+By\+Version\+Async}} (string name, string owner, string type, string project, long version)
+\begin{DoxyCompactList}\small\item\em Удалить файл по версии. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a578ed81e9f9ff2c71fa611105df48add}{Delete\+Project\+Files\+Async}} (string owner, string project)
+\begin{DoxyCompactList}\small\item\em Удалить все файлы проекта. \end{DoxyCompactList}\item 
+Task$<$(Stream, Grid\+FSFile\+Info)$>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ad69f90ed17639786b4e891c60522c673}{Download\+File\+With\+Metadata\+Async}} (string name, string owner, string type, string project, long? version=null)
+\begin{DoxyCompactList}\small\item\em Скачать файл с метаданными. \end{DoxyCompactList}\item 
+Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a924f9bcec86bcb89c391eaf56da1832e}{Get\+All\+Files\+Info\+Async}} (string owner)
+\begin{DoxyCompactList}\small\item\em Получить информацию о всех файлах пользователя. \end{DoxyCompactList}\item 
+Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_af7e4fc266c8f641d1e4dc42bc40a5ead}{Get\+File\+Info\+Async}} (string name, string owner, string type, string project)
+\begin{DoxyCompactList}\small\item\em Получить информацию о файле. \end{DoxyCompactList}\item 
+Task$<$ Grid\+FSFile\+Info $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a57fa889e6e6f14f05cb9a4019b8cbc03}{Get\+File\+Info\+By\+Version\+Async}} (string name, string owner, string type, string project, long version)
+\begin{DoxyCompactList}\small\item\em Получить информацию о файле по версии. \end{DoxyCompactList}\item 
+Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a79743e2f4700547635b4fe3d5d679f00}{Get\+Project\+Files\+Info\+Async}} (string owner, string project)
+\begin{DoxyCompactList}\small\item\em Получить информацию о всех файлах проекта. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a71791e7359cb9c7764345a0210a4e212}{Update\+All\+Files\+Info\+Async}} (string owner, Bson\+Document updated\+Metadata)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о всех файлах пользователя. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a1adbb32c6aaa5a04a5da7c9e75a997d4}{Update\+File\+Info\+Async}} (string name, string owner, string type, string project, Bson\+Document updated\+Metadata)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о файле. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ad0ad57aeee60871694bea9836dc689b2}{Update\+File\+Info\+By\+Project\+Async}} (string owner, string project, Bson\+Document updated\+Metadata)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о всех файлах проекта. \end{DoxyCompactList}\item 
+Task \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a14156512e09ab34fdf576f805a949a2a}{Update\+File\+Info\+By\+Version\+Async}} (string name, string owner, string type, string project, long version, Bson\+Document updated\+Metadata)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о файле по версии. \end{DoxyCompactList}\item 
+Task$<$ Object\+Id $>$ \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ac3f09af1862af2b0c1e0a8c3b1ee0d29}{Upload\+File\+Async}} (string name, string owner, string type, string project, Stream stream, string? description=null, long? version=null)
+\begin{DoxyCompactList}\small\item\em Загрузить файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Интерфейс сервиса для управления файлами. 
+
+\doxysubsection{Методы}
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a11418478c9a16c9f05ff21082eb1e9fc}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!DeleteAllFilesAsync@{DeleteAllFilesAsync}}
+\index{DeleteAllFilesAsync@{DeleteAllFilesAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{DeleteAllFilesAsync()}{DeleteAllFilesAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a11418478c9a16c9f05ff21082eb1e9fc} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Delete\+All\+Files\+Async (\begin{DoxyParamCaption}\item[{string}]{owner}{}\end{DoxyParamCaption})}
+
+
+
+Удалить все файлы пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em owner} & Владелец файлов. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a1b8bfb96319a77c5f277e81de666f917}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a794196577269947a1960d549e953935b}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!DeleteFileAsync@{DeleteFileAsync}}
+\index{DeleteFileAsync@{DeleteFileAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{DeleteFileAsync()}{DeleteFileAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a794196577269947a1960d549e953935b} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Delete\+File\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{}\end{DoxyParamCaption})}
+
+
+
+Удалить файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a3d9e6aad3fc213bf0ea9f123ebccf9ce}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_aef69724caa44295baeb48cede3d09e3b}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!DeleteFileByVersionAsync@{DeleteFileByVersionAsync}}
+\index{DeleteFileByVersionAsync@{DeleteFileByVersionAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{DeleteFileByVersionAsync()}{DeleteFileByVersionAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_aef69724caa44295baeb48cede3d09e3b} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Delete\+File\+By\+Version\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{, }\item[{long}]{version}{}\end{DoxyParamCaption})}
+
+
+
+Удалить файл по версии. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+{\em version} & Версия файла. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_ab2a841928f43e49f787c5c9fe7f8aae2}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a578ed81e9f9ff2c71fa611105df48add}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!DeleteProjectFilesAsync@{DeleteProjectFilesAsync}}
+\index{DeleteProjectFilesAsync@{DeleteProjectFilesAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{DeleteProjectFilesAsync()}{DeleteProjectFilesAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a578ed81e9f9ff2c71fa611105df48add} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Delete\+Project\+Files\+Async (\begin{DoxyParamCaption}\item[{string}]{owner}{, }\item[{string}]{project}{}\end{DoxyParamCaption})}
+
+
+
+Удалить все файлы проекта. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em owner} & Владелец файлов. \\
+\hline
+{\em project} & Проект, к которому относятся файлы. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a4674c86e8116bd3bda641bb5a3407ec2}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ad69f90ed17639786b4e891c60522c673}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!DownloadFileWithMetadataAsync@{DownloadFileWithMetadataAsync}}
+\index{DownloadFileWithMetadataAsync@{DownloadFileWithMetadataAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{DownloadFileWithMetadataAsync()}{DownloadFileWithMetadataAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ad69f90ed17639786b4e891c60522c673} 
+Task$<$(Stream, Grid\+FSFile\+Info)$>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Download\+File\+With\+Metadata\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{, }\item[{long?}]{version}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Скачать файл с метаданными. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+{\em version} & Версия файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Поток данных файла и информация о файле. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a4861293363804d09cdb4a9cc6ffd09a0}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a924f9bcec86bcb89c391eaf56da1832e}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!GetAllFilesInfoAsync@{GetAllFilesInfoAsync}}
+\index{GetAllFilesInfoAsync@{GetAllFilesInfoAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{GetAllFilesInfoAsync()}{GetAllFilesInfoAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a924f9bcec86bcb89c391eaf56da1832e} 
+Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Get\+All\+Files\+Info\+Async (\begin{DoxyParamCaption}\item[{string}]{owner}{}\end{DoxyParamCaption})}
+
+
+
+Получить информацию о всех файлах пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em owner} & Владелец файлов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список информации о файлах. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a5a8f4134927d6d66d7cc8a1309b27699}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_af7e4fc266c8f641d1e4dc42bc40a5ead}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!GetFileInfoAsync@{GetFileInfoAsync}}
+\index{GetFileInfoAsync@{GetFileInfoAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{GetFileInfoAsync()}{GetFileInfoAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_af7e4fc266c8f641d1e4dc42bc40a5ead} 
+Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Get\+File\+Info\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{}\end{DoxyParamCaption})}
+
+
+
+Получить информацию о файле. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список информации о файлах. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a45f629c1f8b30a5617bfd08cfcc35535}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a57fa889e6e6f14f05cb9a4019b8cbc03}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!GetFileInfoByVersionAsync@{GetFileInfoByVersionAsync}}
+\index{GetFileInfoByVersionAsync@{GetFileInfoByVersionAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{GetFileInfoByVersionAsync()}{GetFileInfoByVersionAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a57fa889e6e6f14f05cb9a4019b8cbc03} 
+Task$<$ Grid\+FSFile\+Info $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Get\+File\+Info\+By\+Version\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{, }\item[{long}]{version}{}\end{DoxyParamCaption})}
+
+
+
+Получить информацию о файле по версии. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+{\em version} & Версия файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Информация о файле. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a767dabda97227de25b69190776c76198}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a79743e2f4700547635b4fe3d5d679f00}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!GetProjectFilesInfoAsync@{GetProjectFilesInfoAsync}}
+\index{GetProjectFilesInfoAsync@{GetProjectFilesInfoAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{GetProjectFilesInfoAsync()}{GetProjectFilesInfoAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a79743e2f4700547635b4fe3d5d679f00} 
+Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Get\+Project\+Files\+Info\+Async (\begin{DoxyParamCaption}\item[{string}]{owner}{, }\item[{string}]{project}{}\end{DoxyParamCaption})}
+
+
+
+Получить информацию о всех файлах проекта. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em owner} & Владелец файлов. \\
+\hline
+{\em project} & Проект, к которому относятся файлы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список информации о файлах. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_ad686de01d60f91f292a091117278a54b}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a71791e7359cb9c7764345a0210a4e212}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!UpdateAllFilesInfoAsync@{UpdateAllFilesInfoAsync}}
+\index{UpdateAllFilesInfoAsync@{UpdateAllFilesInfoAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{UpdateAllFilesInfoAsync()}{UpdateAllFilesInfoAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a71791e7359cb9c7764345a0210a4e212} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Update\+All\+Files\+Info\+Async (\begin{DoxyParamCaption}\item[{string}]{owner}{, }\item[{Bson\+Document}]{updated\+Metadata}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о всех файлах пользователя. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em owner} & Владелец файлов. \\
+\hline
+{\em updated\+Metadata} & Обновленные метаданные файлов. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_af26433050adf2f3288c3072fc0f3843a}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a1adbb32c6aaa5a04a5da7c9e75a997d4}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!UpdateFileInfoAsync@{UpdateFileInfoAsync}}
+\index{UpdateFileInfoAsync@{UpdateFileInfoAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{UpdateFileInfoAsync()}{UpdateFileInfoAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a1adbb32c6aaa5a04a5da7c9e75a997d4} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Update\+File\+Info\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{, }\item[{Bson\+Document}]{updated\+Metadata}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о файле. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+{\em updated\+Metadata} & Обновленные метаданные файла. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_ae0e8f8365d3f5d4cf0dd892504b0f360}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ad0ad57aeee60871694bea9836dc689b2}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!UpdateFileInfoByProjectAsync@{UpdateFileInfoByProjectAsync}}
+\index{UpdateFileInfoByProjectAsync@{UpdateFileInfoByProjectAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{UpdateFileInfoByProjectAsync()}{UpdateFileInfoByProjectAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ad0ad57aeee60871694bea9836dc689b2} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Update\+File\+Info\+By\+Project\+Async (\begin{DoxyParamCaption}\item[{string}]{owner}{, }\item[{string}]{project}{, }\item[{Bson\+Document}]{updated\+Metadata}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о всех файлах проекта. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em owner} & Владелец файлов. \\
+\hline
+{\em project} & Проект, к которому относятся файлы. \\
+\hline
+{\em updated\+Metadata} & Обновленные метаданные файлов. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_ad60e346524a6fca21f57dc5509dbdf57}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a14156512e09ab34fdf576f805a949a2a}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!UpdateFileInfoByVersionAsync@{UpdateFileInfoByVersionAsync}}
+\index{UpdateFileInfoByVersionAsync@{UpdateFileInfoByVersionAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{UpdateFileInfoByVersionAsync()}{UpdateFileInfoByVersionAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_a14156512e09ab34fdf576f805a949a2a} 
+Task Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Update\+File\+Info\+By\+Version\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{, }\item[{long}]{version}{, }\item[{Bson\+Document}]{updated\+Metadata}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о файле по версии. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+{\em version} & Версия файла. \\
+\hline
+{\em updated\+Metadata} & Обновленные метаданные файла. \\
+\hline
+\end{DoxyParams}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_a0cb49e2c0749df7ad5260dcdeb53daeb}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+\Hypertarget{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ac3f09af1862af2b0c1e0a8c3b1ee0d29}\index{AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}!UploadFileAsync@{UploadFileAsync}}
+\index{UploadFileAsync@{UploadFileAsync}!AmazingFileVersionControl.Core.Services.IFileService@{AmazingFileVersionControl.Core.Services.IFileService}}
+\doxysubsubsection{\texorpdfstring{UploadFileAsync()}{UploadFileAsync()}}
+{\footnotesize\ttfamily \label{interface_amazing_file_version_control_1_1_core_1_1_services_1_1_i_file_service_ac3f09af1862af2b0c1e0a8c3b1ee0d29} 
+Task$<$ Object\+Id $>$ Amazing\+File\+Version\+Control.\+Core.\+Services.\+IFile\+Service.\+Upload\+File\+Async (\begin{DoxyParamCaption}\item[{string}]{name}{, }\item[{string}]{owner}{, }\item[{string}]{type}{, }\item[{string}]{project}{, }\item[{Stream}]{stream}{, }\item[{string?}]{description}{ = {\ttfamily null}, }\item[{long?}]{version}{ = {\ttfamily null}}\end{DoxyParamCaption})}
+
+
+
+Загрузить файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em name} & Имя файла. \\
+\hline
+{\em owner} & Владелец файла. \\
+\hline
+{\em type} & Тип файла. \\
+\hline
+{\em project} & Проект, к которому относится файл. \\
+\hline
+{\em stream} & Поток данных файла. \\
+\hline
+{\em description} & Описание файла. \\
+\hline
+{\em version} & Версия файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Идентификатор загруженного файла. 
+\end{DoxyReturn}
+
+
+Замещается в \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_services_1_1_file_service_ab21c83e0d9dedb5cbbc4e42d3c1fd8b3}{Amazing\+File\+Version\+Control.\+Core.\+Services.\+File\+Service}}.
+
+
+
+Объявления и описания членов интерфейса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Services/\mbox{\hyperlink{_i_file_service_8cs}{IFile\+Service.\+cs}}\end{DoxyCompactItemize}

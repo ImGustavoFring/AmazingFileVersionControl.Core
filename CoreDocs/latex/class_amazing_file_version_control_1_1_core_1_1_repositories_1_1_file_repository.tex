@@ -1,0 +1,237 @@
+\doxysection{Класс Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository}
+\hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository}{}\label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+
+
+Класс репозитория для управления файлами.  
+
+
+Граф наследования\+:Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a92dba1c726a006c14d2cdcdb712a6605}{File\+Repository}} (IMongo\+Client client, string database\+Name)
+\begin{DoxyCompactList}\small\item\em Конструктор класса \doxylink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository}{File\+Repository}. \end{DoxyCompactList}\item 
+async Task$<$ Object\+Id $>$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a59d2f754abc33615ecbb7ff2825985ed}{Upload\+Async}} (string file\+Name, Stream stream, Bson\+Document metadata)
+\begin{DoxyCompactList}\small\item\em Загрузить файл в базу данных. \end{DoxyCompactList}\item 
+async Task$<$ Stream $>$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_ab3396b7c2dfe169559b8bd2786c79d4b}{Download\+Async}} (Bson\+Document query)
+\begin{DoxyCompactList}\small\item\em Скачать файл из базы данных. \end{DoxyCompactList}\item 
+async Task$<$ Grid\+FSFile\+Info $>$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a210a7d3d25678de8cf26f85c54c3fe3e}{Get\+One\+Async}} (Bson\+Document query)
+\begin{DoxyCompactList}\small\item\em Получить информацию о файле. \end{DoxyCompactList}\item 
+async Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a2ff400b3510c9f283be5b21234bdba05}{Get\+Many\+Async}} (Bson\+Document query)
+\begin{DoxyCompactList}\small\item\em Получить информацию о нескольких файлах. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a3744a4a90ade4b0ed4d4e6cbc07b515d}{Update\+One\+Async}} (Bson\+Document query, Bson\+Document updated\+Metadata)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о файле. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a8d6fe7fd2e0ae671536b8dfec9cf7643}{Update\+Many\+Async}} (Bson\+Document query, Bson\+Document updated\+Metadata)
+\begin{DoxyCompactList}\small\item\em Обновить информацию о нескольких файлах. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a3824bba9140366ba989c305b82624967}{Delete\+One\+Async}} (Bson\+Document query)
+\begin{DoxyCompactList}\small\item\em Удалить файл. \end{DoxyCompactList}\item 
+async Task \mbox{\hyperlink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_ad539b68318275ab14f4f5a23b0485303}{Delete\+Many\+Async}} (Bson\+Document query)
+\begin{DoxyCompactList}\small\item\em Удалить несколько файлов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс репозитория для управления файлами. 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a92dba1c726a006c14d2cdcdb712a6605}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!FileRepository@{FileRepository}}
+\index{FileRepository@{FileRepository}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{FileRepository()}{FileRepository()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a92dba1c726a006c14d2cdcdb712a6605} 
+Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+File\+Repository (\begin{DoxyParamCaption}\item[{IMongo\+Client}]{client}{, }\item[{string}]{database\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор класса \doxylink{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository}{File\+Repository}. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em client} & Клиент Mongo\+DB. \\
+\hline
+{\em database\+Name} & Название базы данных. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_ad539b68318275ab14f4f5a23b0485303}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!DeleteManyAsync@{DeleteManyAsync}}
+\index{DeleteManyAsync@{DeleteManyAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteManyAsync()}{DeleteManyAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_ad539b68318275ab14f4f5a23b0485303} 
+async Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Delete\+Many\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Удалить несколько файлов. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файлов. \\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_a4f56da8046f509772bb33b4afa983b50}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a3824bba9140366ba989c305b82624967}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!DeleteOneAsync@{DeleteOneAsync}}
+\index{DeleteOneAsync@{DeleteOneAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{DeleteOneAsync()}{DeleteOneAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a3824bba9140366ba989c305b82624967} 
+async Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Delete\+One\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Удалить файл. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файла. \\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_a9e599627d86ed7c10c68540fa912e77b}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_ab3396b7c2dfe169559b8bd2786c79d4b}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!DownloadAsync@{DownloadAsync}}
+\index{DownloadAsync@{DownloadAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{DownloadAsync()}{DownloadAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_ab3396b7c2dfe169559b8bd2786c79d4b} 
+async Task$<$ Stream $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Download\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Скачать файл из базы данных. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Поток данных файла. 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_a6561944735488f4b43d312df0beea404}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a2ff400b3510c9f283be5b21234bdba05}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!GetManyAsync@{GetManyAsync}}
+\index{GetManyAsync@{GetManyAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{GetManyAsync()}{GetManyAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a2ff400b3510c9f283be5b21234bdba05} 
+async Task$<$ List$<$ Grid\+FSFile\+Info $>$ $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Get\+Many\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Получить информацию о нескольких файлах. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файлов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Список информации о файлах. 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_a8b04434dbf2909eb91bf689e011f0b7c}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a210a7d3d25678de8cf26f85c54c3fe3e}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!GetOneAsync@{GetOneAsync}}
+\index{GetOneAsync@{GetOneAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{GetOneAsync()}{GetOneAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a210a7d3d25678de8cf26f85c54c3fe3e} 
+async Task$<$ Grid\+FSFile\+Info $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Get\+One\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{}\end{DoxyParamCaption})}
+
+
+
+Получить информацию о файле. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Информация о файле. 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_afee84315592c51b9f0d2090ab69afea6}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a8d6fe7fd2e0ae671536b8dfec9cf7643}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!UpdateManyAsync@{UpdateManyAsync}}
+\index{UpdateManyAsync@{UpdateManyAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateManyAsync()}{UpdateManyAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a8d6fe7fd2e0ae671536b8dfec9cf7643} 
+async Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Update\+Many\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{, }\item[{Bson\+Document}]{updated\+Metadata}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о нескольких файлах. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файлов. \\
+\hline
+{\em updated\+Metadata} & Обновленные метаданные файлов. \\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_a560c8720c8b4092d2ed386f3c5a0c791}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a3744a4a90ade4b0ed4d4e6cbc07b515d}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!UpdateOneAsync@{UpdateOneAsync}}
+\index{UpdateOneAsync@{UpdateOneAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{UpdateOneAsync()}{UpdateOneAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a3744a4a90ade4b0ed4d4e6cbc07b515d} 
+async Task Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Update\+One\+Async (\begin{DoxyParamCaption}\item[{Bson\+Document}]{query}{, }\item[{Bson\+Document}]{updated\+Metadata}{}\end{DoxyParamCaption})}
+
+
+
+Обновить информацию о файле. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em query} & Запрос для поиска файла. \\
+\hline
+{\em updated\+Metadata} & Обновленные метаданные файла. \\
+\hline
+\end{DoxyParams}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_af2c2ffe1ff9e3a115e8a44ebf97a69e3}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+\Hypertarget{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a59d2f754abc33615ecbb7ff2825985ed}\index{AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}!UploadAsync@{UploadAsync}}
+\index{UploadAsync@{UploadAsync}!AmazingFileVersionControl.Core.Repositories.FileRepository@{AmazingFileVersionControl.Core.Repositories.FileRepository}}
+\doxysubsubsection{\texorpdfstring{UploadAsync()}{UploadAsync()}}
+{\footnotesize\ttfamily \label{class_amazing_file_version_control_1_1_core_1_1_repositories_1_1_file_repository_a59d2f754abc33615ecbb7ff2825985ed} 
+async Task$<$ Object\+Id $>$ Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+File\+Repository.\+Upload\+Async (\begin{DoxyParamCaption}\item[{string}]{file\+Name}{, }\item[{Stream}]{stream}{, }\item[{Bson\+Document}]{metadata}{}\end{DoxyParamCaption})}
+
+
+
+Загрузить файл в базу данных. 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em file\+Name} & Имя файла. \\
+\hline
+{\em stream} & Поток данных файла. \\
+\hline
+{\em metadata} & Метаданные файла. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Идентификатор загруженного файла. 
+\end{DoxyReturn}
+
+
+Замещает \mbox{\hyperlink{interface_amazing_file_version_control_1_1_core_1_1_repositories_1_1_i_file_repository_a096d6b5fabd5adc15d4e1671aebccd33}{Amazing\+File\+Version\+Control.\+Core.\+Repositories.\+IFile\+Repository}}.
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Repositories/\mbox{\hyperlink{_file_repository_8cs}{File\+Repository.\+cs}}\end{DoxyCompactItemize}
