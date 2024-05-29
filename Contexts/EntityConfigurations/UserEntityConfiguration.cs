@@ -1,4 +1,9 @@
-﻿using AmazingFileVersionControl.Core.Models.UserDbEntities;
+﻿/**
+ * @file UserEntityConfiguration.cs
+ * @brief Конфигурация сущности пользователя для Entity Framework.
+ */
+
+using AmazingFileVersionControl.Core.Models.UserDbEntities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -10,8 +15,16 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace AmazingFileVersionControl.Core.Contexts.EntityConfigurations
 {
+    /**
+     * @class UserEntityConfiguration
+     * @brief Класс для конфигурации сущности пользователя.
+     */
     public class UserEntityConfiguration : IEntityTypeConfiguration<UserEntity>
     {
+        /**
+         * @brief Настройка конфигурации сущности пользователя.
+         * @param builder Строитель сущности.
+         */
         public void Configure(EntityTypeBuilder<UserEntity> builder)
         {
             builder
@@ -45,11 +58,6 @@ namespace AmazingFileVersionControl.Core.Contexts.EntityConfigurations
                 .HasConversion(
                     v => v.ToString(),
                     v => (RoleInSystem)Enum.Parse(typeof(RoleInSystem), v));
-
-            //builder
-            //    .HasOne(u => u.Profile)
-            //    .WithOne(p => p.User)
-            //    .HasForeignKey<ProfileEntity>(p => p.UserId);
         }
     }
 }

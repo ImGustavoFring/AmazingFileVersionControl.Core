@@ -1,4 +1,9 @@
-﻿using AmazingFileVersionControl.Core.Infrastructure;
+﻿/**
+ * @file UserService.cs
+ * @brief Сервис для управления пользователями.
+ */
+
+using AmazingFileVersionControl.Core.Infrastructure;
 using AmazingFileVersionControl.Core.Models.UserDbEntities;
 using AmazingFileVersionControl.Core.Repositories;
 using MongoDB.Bson;
@@ -8,12 +13,22 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Services
 {
+    /**
+     * @class UserService
+     * @brief Класс сервиса для управления пользователями.
+     */
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
         private readonly IFileService _fileService;
         private readonly IPasswordHasher _passwordHasher;
 
+        /**
+         * @brief Конструктор класса UserService.
+         * @param userRepository Репозиторий пользователей.
+         * @param fileService Сервис для работы с файлами.
+         * @param passwordHasher Хэшер паролей.
+         */
         public UserService(IUserRepository userRepository,
             IFileService fileService, IPasswordHasher passwordHasher)
         {
@@ -22,6 +37,11 @@ namespace AmazingFileVersionControl.Core.Services
             _passwordHasher = passwordHasher;
         }
 
+        /**
+         * @brief Получить пользователя по идентификатору.
+         * @param userId Идентификатор пользователя.
+         * @return Найденный пользователь.
+         */
         public async Task<UserEntity> GetById(string userId)
         {
             try
@@ -35,6 +55,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Получить пользователя по логину.
+         * @param userLogin Логин пользователя.
+         * @return Найденный пользователь.
+         */
         public async Task<UserEntity> GetByLogin(string userLogin)
         {
             try
@@ -47,6 +72,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Получить список пользователей по подстроке логина.
+         * @param loginSubstring Подстрока логина.
+         * @return Список найденных пользователей.
+         */
         public async Task<List<UserEntity>> GetAllByLoginSubstring(string loginSubstring)
         {
             try
@@ -59,6 +89,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Получить список пользователей по подстроке электронной почты.
+         * @param emailSubstring Подстрока электронной почты.
+         * @return Список найденных пользователей.
+         */
         public async Task<List<UserEntity>> GetAllByEmailSubstring(string emailSubstring)
         {
             try
@@ -71,6 +106,10 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Получить список всех пользователей.
+         * @return Список всех пользователей.
+         */
         public async Task<List<UserEntity>> GetAll()
         {
             try
@@ -83,6 +122,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Изменить логин пользователя.
+         * @param userId Идентификатор пользователя.
+         * @param newLogin Новый логин пользователя.
+         */
         public async Task ChangeLogin(string userId, string newLogin)
         {
             try
@@ -108,6 +152,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Изменить электронную почту пользователя.
+         * @param userId Идентификатор пользователя.
+         * @param newEmail Новая электронная почта пользователя.
+         */
         public async Task ChangeEmail(string userId, string newEmail)
         {
             try
@@ -125,6 +174,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Изменить пароль пользователя.
+         * @param userId Идентификатор пользователя.
+         * @param newPassword Новый пароль пользователя.
+         */
         public async Task ChangePassword(string userId, string newPassword)
         {
             try
@@ -143,6 +197,11 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Изменить роль пользователя.
+         * @param userId Идентификатор пользователя.
+         * @param newRole Новая роль пользователя.
+         */
         public async Task ChangeRole(string userId, RoleInSystem newRole)
         {
             try
@@ -160,6 +219,10 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Удалить пользователя по идентификатору.
+         * @param userId Идентификатор пользователя.
+         */
         public async Task DeleteById(string userId)
         {
             try

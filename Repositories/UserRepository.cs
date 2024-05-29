@@ -1,4 +1,9 @@
-﻿using AmazingFileVersionControl.Core.Contexts;
+﻿/**
+ * @file UserRepository.cs
+ * @brief Репозиторий для управления пользователями.
+ */
+
+using AmazingFileVersionControl.Core.Contexts;
 using AmazingFileVersionControl.Core.Models.UserDbEntities;
 using Microsoft.EntityFrameworkCore;
 using MongoDB.Driver.Linq;
@@ -11,15 +16,27 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Repositories
 {
+    /**
+     * @class UserRepository
+     * @brief Класс репозитория для управления пользователями.
+     */
     public class UserRepository : IUserRepository
     {
         private readonly UserDbContext _context;
 
+        /**
+         * @brief Конструктор класса UserRepository.
+         * @param context Контекст базы данных пользователей.
+         */
         public UserRepository(UserDbContext context)
         {
             _context = context;
         }
 
+        /**
+         * @brief Добавить нового пользователя.
+         * @param user Пользователь для добавления.
+         */
         public async Task AddAsync(UserEntity user)
         {
             try
@@ -33,6 +50,11 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Получить пользователя по фильтру.
+         * @param filter Фильтр для поиска пользователя.
+         * @return Найденный пользователь.
+         */
         public async Task<UserEntity> GetOneByFilterAsync(Expression<Func<UserEntity, bool>> filter)
         {
             try
@@ -45,6 +67,11 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Получить список пользователей по фильтру.
+         * @param filter Фильтр для поиска пользователей.
+         * @return Список найденных пользователей.
+         */
         public async Task<List<UserEntity>> GetManyByFilterAsync(Expression<Func<UserEntity, bool>> filter)
         {
             try
@@ -57,6 +84,11 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Обновить пользователя по фильтру.
+         * @param filter Фильтр для поиска пользователя.
+         * @param updateAction Действие обновления пользователя.
+         */
         public async Task UpdateOneByFilterAsync(Expression<Func<UserEntity, bool>> filter, Action<UserEntity> updateAction)
         {
             try
@@ -74,6 +106,11 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Обновить список пользователей по фильтру.
+         * @param filter Фильтр для поиска пользователей.
+         * @param updateAction Действие обновления пользователей.
+         */
         public async Task UpdateManyByFilterAsync(Expression<Func<UserEntity, bool>> filter, Action<UserEntity> updateAction)
         {
             try
@@ -91,6 +128,10 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Удалить пользователя по фильтру.
+         * @param filter Фильтр для поиска пользователя.
+         */
         public async Task DeleteOneByFilterAsync(Expression<Func<UserEntity, bool>> filter)
         {
             try
@@ -109,6 +150,10 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Удалить список пользователей по фильтру.
+         * @param filter Фильтр для поиска пользователей.
+         */
         public async Task DeleteManyByFilterAsync(Expression<Func<UserEntity, bool>> filter)
         {
             try

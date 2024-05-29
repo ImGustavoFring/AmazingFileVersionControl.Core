@@ -1,4 +1,9 @@
-﻿using AmazingFileVersionControl.Core.Infrastructure;
+﻿/**
+ * @file AuthService.cs
+ * @brief Сервис для аутентификации пользователей.
+ */
+
+using AmazingFileVersionControl.Core.Infrastructure;
 using AmazingFileVersionControl.Core.Models.UserDbEntities;
 using AmazingFileVersionControl.Core.Repositories;
 using System;
@@ -6,12 +11,22 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Services
 {
+    /**
+     * @class AuthService
+     * @brief Класс сервиса для аутентификации и регистрации пользователей.
+     */
     public class AuthService : IAuthService
     {
         private readonly IUserRepository _userRepository;
         private readonly IJwtGenerator _jwtGenerator;
         private readonly IPasswordHasher _passwordHasher;
 
+        /**
+         * @brief Конструктор класса AuthService.
+         * @param userRepository Репозиторий пользователей.
+         * @param jwtGenerator Генератор JWT.
+         * @param passwordHasher Хэшер паролей.
+         */
         public AuthService(IUserRepository userRepository,
             IJwtGenerator jwtGenerator,
             IPasswordHasher passwordHasher)
@@ -21,6 +36,13 @@ namespace AmazingFileVersionControl.Core.Services
             _passwordHasher = passwordHasher;
         }
 
+        /**
+         * @brief Регистрация нового пользователя.
+         * @param login Логин пользователя.
+         * @param email Электронная почта пользователя.
+         * @param password Пароль пользователя.
+         * @return JWT токен.
+         */
         public async Task<string> RegisterAsync(string login, string email, string password)
         {
             try
@@ -53,6 +75,12 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
+        /**
+         * @brief Вход пользователя в систему.
+         * @param login Логин пользователя.
+         * @param password Пароль пользователя.
+         * @return JWT токен.
+         */
         public async Task<string> LoginAsync(string login, string password)
         {
             try

@@ -1,4 +1,9 @@
-﻿using MongoDB.Bson;
+﻿/**
+ * @file FileRepository.cs
+ * @brief Репозиторий для управления файлами.
+ */
+
+using MongoDB.Bson;
 using MongoDB.Driver.GridFS;
 using MongoDB.Driver;
 using System;
@@ -9,12 +14,21 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.Repositories
 {
+    /**
+     * @class FileRepository
+     * @brief Класс репозитория для управления файлами.
+     */
     public class FileRepository : IFileRepository
     {
         private readonly IMongoDatabase _database;
         private readonly IGridFSBucket _gridFSBucket;
         private readonly IMongoClient _client;
 
+        /**
+         * @brief Конструктор класса FileRepository.
+         * @param client Клиент MongoDB.
+         * @param databaseName Название базы данных.
+         */
         public FileRepository(IMongoClient client, string databaseName)
         {
             _client = client;
@@ -22,6 +36,13 @@ namespace AmazingFileVersionControl.Core.Repositories
             _gridFSBucket = new GridFSBucket(_database);
         }
 
+        /**
+         * @brief Загрузить файл в базу данных.
+         * @param fileName Имя файла.
+         * @param stream Поток данных файла.
+         * @param metadata Метаданные файла.
+         * @return Идентификатор загруженного файла.
+         */
         public async Task<ObjectId> UploadAsync(string fileName, Stream stream, BsonDocument metadata)
         {
             if (stream == null || stream.Length == 0)
@@ -43,12 +64,16 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Скачать файл из базы данных.
+         * @param query Запрос для поиска файла.
+         * @return Поток данных файла.
+         */
         public async Task<Stream> DownloadAsync(BsonDocument query)
         {
             try
             {
                 var cursor = await _gridFSBucket.FindAsync(query);
-
                 var fileInfo = await cursor.FirstOrDefaultAsync();
 
                 if (fileInfo == null)
@@ -57,7 +82,6 @@ namespace AmazingFileVersionControl.Core.Repositories
                 }
 
                 var stream = new MemoryStream();
-
                 await _gridFSBucket.DownloadToStreamAsync(fileInfo.Id, stream);
                 stream.Position = 0;
 
@@ -69,12 +93,16 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Получить информацию о файле.
+         * @param query Запрос для поиска файла.
+         * @return Информация о файле.
+         */
         public async Task<GridFSFileInfo> GetOneAsync(BsonDocument query)
         {
             try
             {
                 var cursor = await _gridFSBucket.FindAsync(query);
-
                 return await cursor.FirstOrDefaultAsync();
             }
             catch (Exception ex)
@@ -83,12 +111,16 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Получить информацию о нескольких файлах.
+         * @param query Запрос для поиска файлов.
+         * @return Список информации о файлах.
+         */
         public async Task<List<GridFSFileInfo>> GetManyAsync(BsonDocument query)
         {
             try
             {
                 var cursor = await _gridFSBucket.FindAsync(query);
-
                 return await cursor.ToListAsync();
             }
             catch (Exception ex)
@@ -97,6 +129,11 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Обновить информацию о файле.
+         * @param query Запрос для поиска файла.
+         * @param updatedMetadata Обновленные метаданные файла.
+         */
         public async Task UpdateOneAsync(BsonDocument query, BsonDocument updatedMetadata)
         {
             try
@@ -140,6 +177,11 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Обновить информацию о нескольких файлах.
+         * @param query Запрос для поиска файлов.
+         * @param updatedMetadata Обновленные метаданные файлов.
+         */
         public async Task UpdateManyAsync(BsonDocument query, BsonDocument updatedMetadata)
         {
             try
@@ -183,6 +225,10 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Удалить файл.
+         * @param query Запрос для поиска файла.
+         */
         public async Task DeleteOneAsync(BsonDocument query)
         {
             try
@@ -201,6 +247,10 @@ namespace AmazingFileVersionControl.Core.Repositories
             }
         }
 
+        /**
+         * @brief Удалить несколько файлов.
+         * @param query Запрос для поиска файлов.
+         */
         public async Task DeleteManyAsync(BsonDocument query)
         {
             try
