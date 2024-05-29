@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AmazingFileVersionControl.Core.DTOs.AuthDTOs
 {
-    public class LoginDto
+    public class LoginDTO
     {
         [Required(ErrorMessage = "Login is required")]
         [StringLength(30, MinimumLength = 3, ErrorMessage = "Login length must be between 3 and 30 characters")]

@@ -22,11 +22,24 @@ namespace AmazingFileVersionControl.Core.Services
             _passwordHasher = passwordHasher;
         }
 
-        public async Task<UserEntity> GetById(Guid userId)
+        public async Task<UserEntity> GetById(string userId)
         {
             try
             {
-                return await _userRepository.GetOneByFilterAsync(u => u.Id == userId);
+                var guidUserId = Guid.Parse(userId);
+                return await _userRepository.GetOneByFilterAsync(u => u.Id == guidUserId);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Failed to get user by Id.", ex);
+            }
+        }
+
+        public async Task<UserEntity> GetByLogin(string userLogin)
+        {
+            try
+            {
+                return await _userRepository.GetOneByFilterAsync(u => u.Login == userLogin);
             }
             catch (Exception ex)
             {
@@ -70,14 +83,15 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task ChangeLogin(Guid userId, string newLogin)
+        public async Task ChangeLogin(string userId, string newLogin)
         {
             try
             {
+                var guidUserId = Guid.Parse(userId);
                 var user = await GetById(userId);
                 var oldLogin = user.Login;
 
-                await _userRepository.UpdateOneByFilterAsync(u => u.Id == userId, u =>
+                await _userRepository.UpdateOneByFilterAsync(u => u.Id == guidUserId, u =>
                 {
                     u.Login = newLogin;
                     u.UpdatedAt = DateTime.UtcNow;
@@ -94,11 +108,12 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task ChangeEmail(Guid userId, string newEmail)
+        public async Task ChangeEmail(string userId, string newEmail)
         {
             try
             {
-                await _userRepository.UpdateOneByFilterAsync(u => u.Id == userId, u =>
+                var guidUserId = Guid.Parse(userId);
+                await _userRepository.UpdateOneByFilterAsync(u => u.Id == guidUserId, u =>
                 {
                     u.Email = newEmail;
                     u.UpdatedAt = DateTime.UtcNow;
@@ -110,12 +125,13 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task ChangePassword(Guid userId, string newPassword)
+        public async Task ChangePassword(string userId, string newPassword)
         {
             try
             {
+                var guidUserId = Guid.Parse(userId);
                 string hashNewPassword = _passwordHasher.HashPassword(newPassword);
-                await _userRepository.UpdateOneByFilterAsync(u => u.Id == userId, u =>
+                await _userRepository.UpdateOneByFilterAsync(u => u.Id == guidUserId, u =>
                 {
                     u.PasswordHash = hashNewPassword;
                     u.UpdatedAt = DateTime.UtcNow;
@@ -127,11 +143,12 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task ChangeRole(Guid userId, RoleInSystem newRole)
+        public async Task ChangeRole(string userId, RoleInSystem newRole)
         {
             try
             {
-                await _userRepository.UpdateOneByFilterAsync(u => u.Id == userId, u =>
+                var guidUserId = Guid.Parse(userId);
+                await _userRepository.UpdateOneByFilterAsync(u => u.Id == guidUserId, u =>
                 {
                     u.RoleInSystem = newRole;
                     u.UpdatedAt = DateTime.UtcNow;
@@ -143,12 +160,13 @@ namespace AmazingFileVersionControl.Core.Services
             }
         }
 
-        public async Task DeleteById(Guid userId)
+        public async Task DeleteById(string userId)
         {
             try
             {
+                var guidUserId = Guid.Parse(userId);
                 var user = await GetById(userId);
-                await _userRepository.DeleteOneByFilterAsync(u => u.Id == userId);
+                await _userRepository.DeleteOneByFilterAsync(u => u.Id == guidUserId);
                 await _fileService.DeleteAllFilesAsync(user.Login);
             }
             catch (Exception ex)
